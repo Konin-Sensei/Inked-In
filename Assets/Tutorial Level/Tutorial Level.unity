@@ -150,7 +150,7 @@ PrefabInstance:
     - target: {fileID: 6583326336347848989, guid: 5bee56dbb17c99d44a1d7f945a3aa023,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.169
+      value: 0.769
       objectReference: {fileID: 0}
     - target: {fileID: 6583326336347848989, guid: 5bee56dbb17c99d44a1d7f945a3aa023,
         type: 3}
@@ -232,6 +232,11 @@ PrefabInstance:
       propertyPath: jumpPower
       value: 500
       objectReference: {fileID: 0}
+    - target: {fileID: 6583326336347848960, guid: 5bee56dbb17c99d44a1d7f945a3aa023,
+        type: 3}
+      propertyPath: backwardForce.y
+      value: 5.4
+      objectReference: {fileID: 0}
     - target: {fileID: 6583326336347848990, guid: 5bee56dbb17c99d44a1d7f945a3aa023,
         type: 3}
       propertyPath: m_GravityScale
@@ -241,6 +246,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_CollisionDetection
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583326336347848990, guid: 5bee56dbb17c99d44a1d7f945a3aa023,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 457c0f5ff82513940ad8ab39593594e1, type: 2}
+    - target: {fileID: 6583326336347848990, guid: 5bee56dbb17c99d44a1d7f945a3aa023,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583326336347848990, guid: 5bee56dbb17c99d44a1d7f945a3aa023,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583326336347848990, guid: 5bee56dbb17c99d44a1d7f945a3aa023,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 6583326336347848961, guid: 5bee56dbb17c99d44a1d7f945a3aa023,
         type: 3}
