@@ -89,6 +89,10 @@ public class UnityChan2DController : MonoBehaviour
 
         m_isGround = Physics2D.OverlapArea(groundCheck + groundArea, groundCheck - groundArea, whatIsGround);
         m_animator.SetBool("isGround", m_isGround);
+
+        if(m_rigidbody2D.velocity.y > 1f && m_isGround){
+            m_rigidbody2D.velocity = m_rigidbody2D.velocity.normalized * 1f;
+        }
     }
 
     void OnTriggerStay2D(Collider2D other)
