@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - enemy
+  - Inactive Camera
   layers:
   - Default
   - TransparentFX
@@ -39,7 +40,6 @@ TagManager:
   - 
   - 
   - 
-  - Background 2
   m_SortingLayers:
   - name: Default
     uniqueID: 0
@@ -52,6 +52,7 @@ TagManager:
     locked: 0
   - name: entities
     uniqueID: 884790295
+    locked: 0
   - name: Doors
     uniqueID: 2826652097
     locked: 0
