@@ -17,7 +17,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Enemies
   - Player
   - 
   - Ground
@@ -49,4 +49,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 1495894509
+    locked: 0
+  - name: Eraser Minions
+    uniqueID: 255159085
     locked: 0
