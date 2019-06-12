@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Restart : MonoBehaviour {
+public class Fall_Detector : MonoBehaviour {
 	
 	string scene;
 
 	void Start () {
 		scene = SceneManager.GetActiveScene().name;
 	}
-	void Update () {
-		if (Input.GetKeyDown (KeyCode.R)) {
-			SceneManager.LoadScene (scene);
-		}
-	}
+    void OnTriggerEnter2D(Collider2D other){
+        if(other.tag == "Player"){
+            SceneManager.LoadScene (scene);
+        }
+    }
 }
