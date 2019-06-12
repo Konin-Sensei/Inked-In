@@ -21,9 +21,16 @@ public class Mover : MonoBehaviour
 		rb = gameObject.GetComponent<Rigidbody2D>();
 		largeCollider = gameObject.GetComponent<BoxCollider2D>();
 			//NEXT STEPS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-			//set up a raycast pointing down that should return the platform in raycastResults
+			//1. set up a raycast pointing down that should return the platform in raycastResults
 			//and use that reference in order to set boundaries on where the enemy can walk.
-			//Long term goal: 
+			//2. set up some search criterion in Update that checks around for plats above/below
+			//evilchan, in the case that she's on a dif y level. Attempt to jump up the nearest one
+			//without checking if it's possible first.
+			//3. Have a random intelligence level that will decide how likely it is for a failure
+			//to lead to a change in behaviour.
+			//4. Have a random bravery level that decides how likely you are to run away from Unity Chan
+			//5. Add run script (or just a boolean value that flips every sign)
+			//6. Make konin animate these fuckers until they're adorbs or just do it yourself if time allows
 		target = GameObject.FindGameObjectWithTag ("Player").transform;
         
     }
