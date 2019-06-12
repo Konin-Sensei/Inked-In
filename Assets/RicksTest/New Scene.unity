@@ -219,12 +219,12 @@ PrefabInstance:
     - target: {fileID: 6583326336347848989, guid: 5bee56dbb17c99d44a1d7f945a3aa023,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.14
+      value: 6.25
       objectReference: {fileID: 0}
     - target: {fileID: 6583326336347848989, guid: 5bee56dbb17c99d44a1d7f945a3aa023,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.35
+      value: 2.24
       objectReference: {fileID: 0}
     - target: {fileID: 6583326336347848989, guid: 5bee56dbb17c99d44a1d7f945a3aa023,
         type: 3}
@@ -289,7 +289,7 @@ PrefabInstance:
     - target: {fileID: 6583326336347848990, guid: 5bee56dbb17c99d44a1d7f945a3aa023,
         type: 3}
       propertyPath: m_GravityScale
-      value: 3.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6583326336347848988, guid: 5bee56dbb17c99d44a1d7f945a3aa023,
         type: 3}
@@ -300,6 +300,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingLayer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583326336347848961, guid: 5bee56dbb17c99d44a1d7f945a3aa023,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.25
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6583326336347848960, guid: 5bee56dbb17c99d44a1d7f945a3aa023, type: 3}
@@ -708,4 +713,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   push: {x: 0, y: 0}
   rb: {fileID: 0}
-  bc: {fileID: 0}
+  largeCollider: {fileID: 0}
+  feet: {fileID: 0}
+  currentGround: {fileID: 0}
