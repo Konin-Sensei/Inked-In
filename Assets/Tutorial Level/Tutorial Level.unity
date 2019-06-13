@@ -1037,6 +1037,16 @@ PrefabInstance:
       propertyPath: doorSprite.Array.data[1]
       value: 
       objectReference: {fileID: 599530645}
+    - target: {fileID: 4572639678830834097, guid: b9ea348adc2fe4b41b89ae8eba9bcfa4,
+        type: 3}
+      propertyPath: alwaysOpen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4572639678830834097, guid: b9ea348adc2fe4b41b89ae8eba9bcfa4,
+        type: 3}
+      propertyPath: nextLevel
+      value: Main Menu
+      objectReference: {fileID: 0}
     - target: {fileID: 8694520308298000890, guid: b9ea348adc2fe4b41b89ae8eba9bcfa4,
         type: 3}
       propertyPath: m_Enabled
@@ -1062,12 +1072,12 @@ PrefabInstance:
     - target: {fileID: 5332284175155335243, guid: b9ea348adc2fe4b41b89ae8eba9bcfa4,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 35.15
+      value: 35.381
       objectReference: {fileID: 0}
     - target: {fileID: 5332284175155335243, guid: b9ea348adc2fe4b41b89ae8eba9bcfa4,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 7.74
+      value: 7.68
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9ea348adc2fe4b41b89ae8eba9bcfa4, type: 3}
@@ -1102,6 +1112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextLevel: Main Menu
+  levelSelectDoor: 0
 --- !u!1 &805981978
 GameObject:
   m_ObjectHideFlags: 0
@@ -1812,7 +1823,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1353655281}
-  m_Enabled: 0
+  m_Enabled: 1
 --- !u!4 &1353655284
 Transform:
   m_ObjectHideFlags: 0
