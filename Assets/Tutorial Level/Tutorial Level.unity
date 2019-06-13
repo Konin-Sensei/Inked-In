@@ -1213,7 +1213,6 @@ GameObject:
   - component: {fileID: 870164978}
   - component: {fileID: 870164977}
   - component: {fileID: 870164980}
-  - component: {fileID: 870164981}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1281,20 +1280,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6792e17e1524cfa41aa6ffb1a9a49af3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &870164981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 870164976}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16d3592253e4aa24a9e4e4bb4d091b6b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  linePrefab: {fileID: 1070001585661353005, guid: 1b0299fedf28b6448b6ace73e813a6cf,
-    type: 3}
 --- !u!1 &1114795452
 GameObject:
   m_ObjectHideFlags: 0
@@ -1400,6 +1385,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 134476441}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1145695280
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1145695282}
+  - component: {fileID: 1145695281}
+  m_Layer: 0
+  m_Name: LineDrawer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1145695281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145695280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16d3592253e4aa24a9e4e4bb4d091b6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  linePrefab: {fileID: 1070001585661353005, guid: 1b0299fedf28b6448b6ace73e813a6cf,
+    type: 3}
+--- !u!4 &1145695282
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145695280}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.1650698, y: 1.9904535, z: -5.161992}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1255547880
 GameObject:
@@ -2251,7 +2281,7 @@ MonoBehaviour:
   isPaused: 0
   mainMenu: Main Menu
   pauseMenuUI: {fileID: 1956636977}
-  eventSystem: {fileID: 870164976}
+  lineDrawer: {fileID: 1145695280}
 --- !u!114 &2107921208
 MonoBehaviour:
   m_ObjectHideFlags: 0
