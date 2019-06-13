@@ -207,6 +207,16 @@ PrefabInstance:
       propertyPath: doorSprite.Array.data[1]
       value: 
       objectReference: {fileID: 906595099}
+    - target: {fileID: 4572639678830834097, guid: b9ea348adc2fe4b41b89ae8eba9bcfa4,
+        type: 3}
+      propertyPath: alwaysOpen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4572639678830834097, guid: b9ea348adc2fe4b41b89ae8eba9bcfa4,
+        type: 3}
+      propertyPath: nextLevel
+      value: Tutorial Level
+      objectReference: {fileID: 0}
     - target: {fileID: 8694520308298000890, guid: b9ea348adc2fe4b41b89ae8eba9bcfa4,
         type: 3}
       propertyPath: m_Enabled
@@ -885,6 +895,16 @@ PrefabInstance:
       propertyPath: doorSprite.Array.data[1]
       value: 
       objectReference: {fileID: 355902264}
+    - target: {fileID: 4572639678830834097, guid: b9ea348adc2fe4b41b89ae8eba9bcfa4,
+        type: 3}
+      propertyPath: alwaysOpen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4572639678830834097, guid: b9ea348adc2fe4b41b89ae8eba9bcfa4,
+        type: 3}
+      propertyPath: nextLevel
+      value: Level Select
+      objectReference: {fileID: 0}
     - target: {fileID: 8694520308298000890, guid: b9ea348adc2fe4b41b89ae8eba9bcfa4,
         type: 3}
       propertyPath: m_Enabled
@@ -1425,6 +1445,11 @@ PrefabInstance:
       propertyPath: doorSprite.Array.data[1]
       value: 
       objectReference: {fileID: 1628668217}
+    - target: {fileID: 4572639678830834097, guid: b9ea348adc2fe4b41b89ae8eba9bcfa4,
+        type: 3}
+      propertyPath: alwaysOpen
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8694520308298000890, guid: b9ea348adc2fe4b41b89ae8eba9bcfa4,
         type: 3}
       propertyPath: m_Enabled
@@ -1913,6 +1938,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextLevel: Tutorial Level
+  levelSelectDoor: 0
 --- !u!1 &1926781645
 GameObject:
   m_ObjectHideFlags: 0
