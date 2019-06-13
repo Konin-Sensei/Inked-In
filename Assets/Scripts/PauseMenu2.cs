@@ -18,12 +18,12 @@ public class PauseMenu2 : MonoBehaviour {
 
 			pauseMenuUI.SetActive (true);
 			Time.timeScale = 0f;
-			eventSystem.SetActive(false);
+			//eventSystem.SetActive(false);
 
 		} else {
 			pauseMenuUI.SetActive (false);
 			Time.timeScale = 1f;
-			eventSystem.SetActive(true);
+			//eventSystem.SetActive(true);
 		}
 
 		if (Input.GetKeyDown (KeyCode.Escape)) {
