@@ -8,8 +8,7 @@ public class PauseMenu2 : MonoBehaviour {
 	public bool isPaused;
 	public string mainMenu;
 	public GameObject pauseMenuUI;
-
-	public GameObject eventSystem;
+	public GameObject lineDrawer;
 	
 	// Update is called once per frame
 	void Update () {
@@ -18,12 +17,12 @@ public class PauseMenu2 : MonoBehaviour {
 
 			pauseMenuUI.SetActive (true);
 			Time.timeScale = 0f;
-			//eventSystem.SetActive(false);
+			lineDrawer.SetActive(false);
 
 		} else {
 			pauseMenuUI.SetActive (false);
+			lineDrawer.SetActive(true);
 			Time.timeScale = 1f;
-			//eventSystem.SetActive(true);
 		}
 
 		if (Input.GetKeyDown (KeyCode.Escape)) {
