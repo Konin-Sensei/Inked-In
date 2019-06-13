@@ -6,6 +6,8 @@ public class Swap_Cameras : MonoBehaviour
 {
     public Camera follow_cam;
     public Camera gap_cam;
+    public float x, y, z;
+    public GameObject wallpaper;
 
     void Start(){
         follow_cam.gameObject.SetActive(true);
@@ -19,6 +21,7 @@ public class Swap_Cameras : MonoBehaviour
         gap_cam.gameObject.tag = "Inactive Camera";
         follow_cam.gameObject.SetActive(true);
         follow_cam.gameObject.tag = "MainCamera";
+        wallpaper.transform.position = new Vector3(x, y, z);
     }
 
     public void enable_gap_camera(){
