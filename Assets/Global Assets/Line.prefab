@@ -47,6 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lineRenderer: {fileID: 988002163836803410}
   edgeCol: {fileID: 1382187039568551046}
+  baseDot: {fileID: 8387431531610933152, guid: 513fd6f01081d1442bc08b68b0a28310, type: 3}
 --- !u!120 &988002163836803410
 LineRenderer:
   m_ObjectHideFlags: 0
