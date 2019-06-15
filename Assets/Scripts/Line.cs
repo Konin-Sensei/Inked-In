@@ -21,7 +21,7 @@ public class Line : MonoBehaviour {
 			return;
 		}
 
-		if (Vector2.Distance(points.Last(), mousePos) > .001f) {
+		if (Vector2.Distance(points.Last(), mousePos) > 0.1f) {
 
 			SetPoint (mousePos);
 
@@ -34,17 +34,17 @@ public class Line : MonoBehaviour {
 		foreach(Vector2 point in points){
 			Instantiate(baseDot, point, baseDot.rotation);
 		}
-		/*for(int i = 0; i < points.Count; i++){
+		for(int i = 0; i < points.Count; i++){
 			Instantiate(baseDot, points[i], baseDot.rotation);
 			if(i < points.Count - 1){
 				float distance = Vector3.Distance(points[i], points[i+1]);
-				float distanceCovered = 0.01f;
-				while (distanceCovered <= 1){
+				float distanceCovered = 0f;
+				while (distanceCovered <= distance){
 					Instantiate(baseDot, Vector3.Lerp(points[i], points[i+1], distanceCovered), baseDot.rotation);
-					distanceCovered += 0.01f;
+					distanceCovered += 0.05f/distance;
 				}
 			}
-		}*/
+		}
 	}
 
 	void SetPoint (Vector2 point)
