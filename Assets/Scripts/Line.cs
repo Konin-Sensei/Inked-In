@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using System;
 
 public class Line : MonoBehaviour {
 
@@ -9,6 +10,7 @@ public class Line : MonoBehaviour {
 	public LineRenderer lineRenderer;
 	public EdgeCollider2D edgeCol;
 	public Transform baseDot;
+	public float interpolationQuality = 0.1f;
 
 	List<Vector2> points;
 
@@ -31,17 +33,14 @@ public class Line : MonoBehaviour {
 
 	//Konin Test
 	public void ConvertLine(){
-		foreach(Vector2 point in points){
-			Instantiate(baseDot, point, baseDot.rotation);
-		}
 		for(int i = 0; i < points.Count; i++){
 			Instantiate(baseDot, points[i], baseDot.rotation);
 			if(i < points.Count - 1){
 				float distance = Vector3.Distance(points[i], points[i+1]);
-				float distanceCovered = 0f;
-				while (distanceCovered <= distance){
+				float distanceCovered = interpolationQuality;
+				while (distanceCovered <= 1){
 					Instantiate(baseDot, Vector3.Lerp(points[i], points[i+1], distanceCovered), baseDot.rotation);
-					distanceCovered += 0.05f/distance;
+					distanceCovered += interpolationQuality;
 				}
 			}
 		}

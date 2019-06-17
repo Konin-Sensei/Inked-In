@@ -48,6 +48,7 @@ MonoBehaviour:
   lineRenderer: {fileID: 988002163836803410}
   edgeCol: {fileID: 1382187039568551046}
   baseDot: {fileID: 8387431531610933152, guid: 513fd6f01081d1442bc08b68b0a28310, type: 3}
+  interpolationQuality: 0.015
 --- !u!120 &988002163836803410
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -150,7 +151,7 @@ EdgeCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1070001585661353005}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 6200000, guid: be9af274369a724408d2a4c0218df238, type: 2}
   m_IsTrigger: 0

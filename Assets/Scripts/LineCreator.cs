@@ -18,6 +18,7 @@ public class LineCreator : MonoBehaviour {
 
 		if (Input.GetMouseButtonUp (0)) {
 			activeLine.ConvertLine();
+			activeLine.lineRenderer.enabled = false;
 			activeLine = null;
 		}
 

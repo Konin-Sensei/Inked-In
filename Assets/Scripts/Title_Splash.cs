@@ -8,9 +8,11 @@ public class Title_Splash : MonoBehaviour
     public float FadeRate;
     private Image image;
     private float targetAlpha;
+    public Canvas tutorial_speech;
 
     // Start is called before the first frame update
     void Start(){
+        tutorial_speech.enabled = false;
         this.image = this.GetComponent<Image>();
         if(this.image == null){
             Debug.LogError("Error: No Image on "+this.name);
@@ -27,6 +29,9 @@ public class Title_Splash : MonoBehaviour
         if(alphaDiff > 0.0001f){
             curColor.a = Mathf.Lerp(curColor.a, targetAlpha, this.FadeRate * Time.deltaTime);
             this.image.color = curColor;
+        }
+        if(alphaDiff <= 0.03f && tutorial_speech.enabled == false){
+            tutorial_speech.enabled = true;
         }
     }
 
