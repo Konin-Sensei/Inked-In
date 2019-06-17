@@ -8,7 +8,6 @@ public class Line : MonoBehaviour {
 
 
 	public LineRenderer lineRenderer;
-	public EdgeCollider2D edgeCol;
 	public Transform baseDot;
 	public float interpolationQuality = 0.1f;
 
@@ -52,9 +51,5 @@ public class Line : MonoBehaviour {
 
 		lineRenderer.positionCount = points.Count;
 		lineRenderer.SetPosition (points.Count - 1, point);
-
-		if (points.Count > 1) {
-			edgeCol.points = points.ToArray ();
-		}
 	}
 }
