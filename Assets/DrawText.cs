@@ -13,6 +13,6 @@ public class DrawText : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other){
         if(other.tag == "Player")
-            intro_text.setText("That's all the instruction for now!\nJust ahead you'll find a door.\nPress the 'F' key when the door\n           opens to go through it!");
+            intro_text.setText("Notice that your ink remaining has\ndropped! You have a limited\namount per level!");
     }
 }
