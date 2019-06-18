@@ -5,7 +5,14 @@ using UnityEngine;
 public class LineCreator : MonoBehaviour {
 
 	public GameObject linePrefab;
+	public GameObject handlerPrefab;
 	Line activeLine;
+	InkHandler ink_handler;
+
+	void Start(){
+		GameObject ink_handle = Instantiate(handlerPrefab);
+		ink_handler = ink_handle.GetComponent<InkHandler> ();
+	}
 
 	void Update () {
 
@@ -17,7 +24,12 @@ public class LineCreator : MonoBehaviour {
 		}
 
 		if (Input.GetMouseButtonUp (0)) {
-			activeLine.ConvertLine();
+			if(ink_handler.ink_available()){
+				int ink_used = activeLine.ConvertLine(ink_handler.ink_avail_quantity());
+				for(int i = 0; i < ink_used; i++){
+					ink_handler.decrease_ink();
+				}
+			}
 			activeLine.lineRenderer.enabled = false;
 			activeLine = null;
 		}
@@ -29,5 +41,6 @@ public class LineCreator : MonoBehaviour {
 		}
 
 	}
+	
 
 }

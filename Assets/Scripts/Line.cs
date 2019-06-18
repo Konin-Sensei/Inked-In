@@ -10,6 +10,7 @@ public class Line : MonoBehaviour {
 	public LineRenderer lineRenderer;
 	public Transform baseDot;
 	public float interpolationQuality = 0.1f;
+	private int ink_used = 0;
 
 	List<Vector2> points;
 
@@ -31,18 +32,27 @@ public class Line : MonoBehaviour {
 	}
 
 	//Konin Test
-	public void ConvertLine(){
-		for(int i = 0; i < points.Count; i++){
-			Instantiate(baseDot, points[i], baseDot.rotation);
-			if(i < points.Count - 1){
-				float distance = Vector3.Distance(points[i], points[i+1]);
-				float distanceCovered = interpolationQuality;
-				while (distanceCovered <= 1){
-					Instantiate(baseDot, Vector3.Lerp(points[i], points[i+1], distanceCovered), baseDot.rotation);
-					distanceCovered += interpolationQuality;
+	public int ConvertLine(int ink_available){
+		while((ink_available - ink_used) > 0){
+			for(int i = 0; i < points.Count; i++){
+				ink_used += 1;
+				if((ink_available - ink_used) <= 0){
+					i = points.Count + 1;
+				}else{
+					Instantiate(baseDot, points[i], baseDot.rotation);
+				}
+				if(i < points.Count - 1){
+					float distance = Vector3.Distance(points[i], points[i+1]);
+					float distanceCovered = interpolationQuality;
+					while (distanceCovered <= 1 && (ink_available - ink_used) > 0){
+						Instantiate(baseDot, Vector3.Lerp(points[i], points[i+1], distanceCovered), baseDot.rotation);
+						ink_used += 1;
+						distanceCovered += interpolationQuality;
+					}
 				}
 			}
 		}
+		return ink_used;
 	}
 
 	void SetPoint (Vector2 point)

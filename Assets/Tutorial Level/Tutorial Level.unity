@@ -1526,6 +1526,7 @@ GameObject:
   - component: {fileID: 805981980}
   - component: {fileID: 805981979}
   - component: {fileID: 805981982}
+  - component: {fileID: 805981983}
   m_Layer: 0
   m_Name: Follow Camera
   m_TagString: MainCamera
@@ -1613,6 +1614,18 @@ MonoBehaviour:
   player: {fileID: 8123602083103348428}
   smoothCamera: 7
   offset: {x: 0, y: 1, z: -10}
+--- !u!114 &805981983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805981978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c85c80e5fbc27a4381b1680915bd69f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &845792764 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8919513776903524963, guid: 63700a585c12ce94098afe773dae7a9f,
@@ -1849,6 +1862,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   linePrefab: {fileID: 1070001585661353005, guid: 1b0299fedf28b6448b6ace73e813a6cf,
+    type: 3}
+  handlerPrefab: {fileID: 691485600234606690, guid: 8ef344838ac2d0b4a9a7d02a9956d6eb,
     type: 3}
 --- !u!4 &1145695282
 Transform:
@@ -2282,6 +2297,7 @@ GameObject:
   - component: {fileID: 1353655284}
   - component: {fileID: 1353655282}
   - component: {fileID: 1353655283}
+  - component: {fileID: 1353655285}
   m_Layer: 16
   m_Name: Gap Camera
   m_TagString: Inactive Camera
@@ -2354,6 +2370,18 @@ Transform:
   m_Father: {fileID: 1305584636}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1353655285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353655281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c85c80e5fbc27a4381b1680915bd69f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1441514843
 PrefabInstance:
   m_ObjectHideFlags: 0
