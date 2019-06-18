@@ -48,11 +48,11 @@ public class Line : MonoBehaviour {
 				}
 				if(i < points.Count - 1){
 					float distance = Vector3.Distance(points[i], points[i+1]);
-					float distanceCovered = interpolationQuality;
+					float distanceCovered = interpolationQuality/distance;
 					while (distanceCovered <= 1 && (ink_available - ink_used) > 0){
 						Instantiate(baseDot, Vector3.Lerp(points[i], points[i+1], distanceCovered), baseDot.rotation);
 						ink_used += 1;
-						distanceCovered += interpolationQuality;
+						distanceCovered += interpolationQuality/distance;
 					}
 				}
 				if(i == points.Count - 1){
