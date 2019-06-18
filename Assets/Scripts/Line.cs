@@ -33,6 +33,10 @@ public class Line : MonoBehaviour {
 
 	//Konin Test
 	public int ConvertLine(int ink_available){
+		if(points.Count == 1){
+			Instantiate(baseDot, points[0], baseDot.rotation);
+			return 1;
+		}
 		while((ink_available - ink_used) > 0){
 			for(int i = 0; i < points.Count; i++){
 				ink_used += 1;
