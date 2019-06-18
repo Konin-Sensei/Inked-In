@@ -33,11 +33,12 @@ public class Line : MonoBehaviour {
 
 	//Konin Test
 	public int ConvertLine(int ink_available){
+		bool fuckyouFlag = true;
 		if(points.Count == 1){
 			Instantiate(baseDot, points[0], baseDot.rotation);
 			return 1;
 		}
-		while((ink_available - ink_used) > 0){
+		while((ink_available - ink_used) > 0 && fuckyouFlag){
 			for(int i = 0; i < points.Count; i++){
 				ink_used += 1;
 				if((ink_available - ink_used) <= 0){
@@ -53,6 +54,9 @@ public class Line : MonoBehaviour {
 						ink_used += 1;
 						distanceCovered += interpolationQuality;
 					}
+				}
+				if(i == points.Count - 1){
+					fuckyouFlag = false;
 				}
 			}
 		}
