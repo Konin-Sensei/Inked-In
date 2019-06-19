@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3806117019193676600}
   - component: {fileID: 3806117019193676601}
   - component: {fileID: 3806117019193676550}
+  - component: {fileID: -3737194690195852393}
   m_Layer: 16
   m_Name: Gooey
   m_TagString: Untagged
@@ -120,3 +121,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platform: {fileID: 11400000, guid: c46685f59d8fb4344a3e1b507d47c580, type: 2}
+--- !u!114 &-3737194690195852393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3806117019193676551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d74a8e80a55d6e64cb71c027811ae5d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: f3e3a6fa907c1b7468fd30cedc3d3608, type: 3}
+  - {fileID: 21300000, guid: f3e3a6fa907c1b7468fd30cedc3d3608, type: 3}
+  - {fileID: 21300000, guid: f3e3a6fa907c1b7468fd30cedc3d3608, type: 3}
+  - {fileID: 21300000, guid: f3e3a6fa907c1b7468fd30cedc3d3608, type: 3}
+  - {fileID: 21300000, guid: f3e3a6fa907c1b7468fd30cedc3d3608, type: 3}
+  - {fileID: 21300000, guid: e6bbf8244ad2ebf4984907d79096a848, type: 3}
+  - {fileID: 21300000, guid: e6bbf8244ad2ebf4984907d79096a848, type: 3}
+  - {fileID: 21300000, guid: 1eec803b3d003e247bd4a0f432dbe22d, type: 3}
+  - {fileID: 21300000, guid: e61e62c1e99d6c04996f3a783e8a6f18, type: 3}

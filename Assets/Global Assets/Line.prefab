@@ -45,10 +45,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lineRenderer: {fileID: 988002163836803410}
-  baseDot: {fileID: 8387431531610933152, guid: 513fd6f01081d1442bc08b68b0a28310, type: 3}
+  baseDot:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   interpolationQuality: 0.015
-  ink_quantity: 1000
-  ink_used: 900
 --- !u!120 &988002163836803410
 LineRenderer:
   m_ObjectHideFlags: 0

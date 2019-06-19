@@ -8,7 +8,7 @@ public class Line : MonoBehaviour {
 
 
 	public LineRenderer lineRenderer;
-	public Transform baseDot;
+	public Transform[] baseDot = new Transform[3];
 	public float interpolationQuality = 0.1f;
 	private int ink_used = 0;
 
@@ -35,7 +35,7 @@ public class Line : MonoBehaviour {
 	public int ConvertLine(int ink_available){
 		bool fuckyouFlag = true;
 		if(points.Count == 1){
-			Instantiate(baseDot, points[0], baseDot.rotation);
+			Instantiate(baseDot[Tool.getTool()], points[0], baseDot[Tool.getTool()].rotation);
 			return 1;
 		}
 		while((ink_available - ink_used) > 0 && fuckyouFlag){
@@ -44,13 +44,13 @@ public class Line : MonoBehaviour {
 				if((ink_available - ink_used) <= 0){
 					i = points.Count + 1;
 				}else{
-					Instantiate(baseDot, points[i], baseDot.rotation);
+					Instantiate(baseDot[Tool.getTool()], points[i], baseDot[Tool.getTool()].rotation);
 				}
 				if(i < points.Count - 1){
 					float distance = Vector3.Distance(points[i], points[i+1]);
 					float distanceCovered = interpolationQuality/distance;
 					while (distanceCovered <= 1 && (ink_available - ink_used) > 0){
-						Instantiate(baseDot, Vector3.Lerp(points[i], points[i+1], distanceCovered), baseDot.rotation);
+						Instantiate(baseDot[Tool.getTool()], Vector3.Lerp(points[i], points[i+1], distanceCovered), baseDot[Tool.getTool()].rotation);
 						ink_used += 1;
 						distanceCovered += interpolationQuality/distance;
 					}

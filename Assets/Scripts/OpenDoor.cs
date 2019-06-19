@@ -3,17 +3,20 @@ using UnityEngine;
 
 public class OpenDoor : MonoBehaviour
 {
-    public SpriteRenderer[] doorSprite;
+    SpriteRenderer sprite_renderer;
+    public Sprite[] open_sprites = new Sprite[9];
+    public Sprite[] closed_sprites = new Sprite[9];
 
     void Start(){
-        GetComponent<SpriteRenderer>().sprite = doorSprite[0].sprite;
+        sprite_renderer = GetComponent<SpriteRenderer>();
+        sprite_renderer.sprite = closed_sprites[ColorProgress.getLevel()];
     }
 
     void OnTriggerEnter2D(Collider2D other){
-        GetComponent<SpriteRenderer>().sprite = doorSprite[1].sprite;
+        sprite_renderer.sprite = open_sprites[ColorProgress.getLevel()];
     }
 
     void OnTriggerExit2D(Collider2D other){
-        GetComponent<SpriteRenderer>().sprite = doorSprite[0].sprite;
+        sprite_renderer.sprite = closed_sprites[ColorProgress.getLevel()];
     }
 }
