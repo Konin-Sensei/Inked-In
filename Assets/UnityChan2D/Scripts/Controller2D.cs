@@ -22,10 +22,6 @@ public class Controller2D : MonoBehaviour {
 	void Start() {
 		m_collider = GetComponent<BoxCollider2D> ();
 		CalculateRaySpacing ();
-		Tool.tools[0] = true;
-		for(int i = 1; i < 3; i++){
-			Tool.tools[i] = false;
-		}
 	}
 
 	public void Move(Vector3 velocity) {
