@@ -15,6 +15,8 @@ public class BasicEnemy : MonoBehaviour
 	public Patrol patrol;
 	public walk walkHelp;
 	public checkCollision chkr; //chkr
+
+	public int speed;
 		
 	
     // Start is called before the first frame update
@@ -49,6 +51,7 @@ public class BasicEnemy : MonoBehaviour
 		chkr.setLeader(brain);
 		chkr.setBod(body);
 		walkHelp.setBody(body);
+		walkHelp.setSpeed(speed);
 		Debug.Log("solid");
 		
     }

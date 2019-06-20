@@ -5,10 +5,16 @@ using UnityEngine;
 public class walk : Helper, Ihelper
 {
 	private RaycastHit2D hit;
+	private int speed;
 	private Rigidbody2D body;
 	private GameObject form = new GameObject();
 	private bool movingRight = true;//we may be able to use cos/sin to avoid this entirely
 	//but not if we want them to find their own path... It would speed up the setBounds class.
+
+	public void setSpeed(int input)
+	{
+		speed = input;
+	}
 	
 	public walk(string input)
 	{
@@ -87,13 +93,13 @@ public class walk : Helper, Ihelper
 	
 	private void goRight()
 	{
-		body.velocity = form.transform.right * 1;
+		body.velocity = form.transform.right  * speed;
 		Debug.Log("goRight was called!");
 	}
 	
 	private void goLeft()
 	{
-		body.velocity = form.transform.right * -1;
+		body.velocity = form.transform.right * -1 * speed;
 		Debug.Log("goLeft was called!");
 
 	}
