@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3652235297234730814}
   - component: {fileID: 1780744848327121348}
   m_Layer: 16
-  m_Name: baseDot
+  m_Name: baseDotMagnet
   m_TagString: Dots
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70,7 +70,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 76b8b475f0a6fbb4a93f93157022dad1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f1537dde02d77d24ebb9e522565a40b6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
