@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3652235297234730814}
   - component: {fileID: 1780744848327121348}
   m_Layer: 16
-  m_Name: baseDot
+  m_Name: baseDotBounce
   m_TagString: Dots
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -90,7 +90,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 6891749716191960092}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 8a62d50219f86f040a876a349001725d, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
