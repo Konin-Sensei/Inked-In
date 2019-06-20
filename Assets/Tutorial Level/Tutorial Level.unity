@@ -3215,6 +3215,16 @@ PrefabInstance:
       propertyPath: x_offset
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 133690666771965309, guid: 87a9370d7c4bb6642a7ac5b45970604a,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1495894509
+      objectReference: {fileID: 0}
+    - target: {fileID: 133690666771965309, guid: 87a9370d7c4bb6642a7ac5b45970604a,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87a9370d7c4bb6642a7ac5b45970604a, type: 3}
 --- !u!1 &1886808949
