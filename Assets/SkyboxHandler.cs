@@ -9,4 +9,7 @@ public class SkyboxHandler : MonoBehaviour
     void Start(){
         RenderSettings.skybox = materials[ColorProgress.getLevel()];
     }
+    void Update(){
+        RenderSettings.skybox = materials[ColorProgress.getLevel()];
+    }
 }

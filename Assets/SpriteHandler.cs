@@ -11,4 +11,7 @@ public class SpriteHandler : MonoBehaviour
         sprite_renderer = GetComponent<SpriteRenderer>();
         sprite_renderer.sprite = sprites[ColorProgress.getLevel()];
     }
+    void Update(){
+        sprite_renderer.sprite = sprites[ColorProgress.getLevel()];
+    }
 }

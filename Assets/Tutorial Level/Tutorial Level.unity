@@ -598,7 +598,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontal_range: 0
   vertical_range: 5
-  speed: 0
+  speed: 1
   rotation_rate: 0
 --- !u!50 &140071040
 Rigidbody2D:
@@ -1155,7 +1155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0ce61aeb75efcf40ac4913c24bfccc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intro_text: {fileID: 0}
+  intro_text: {fileID: 432173714200733564}
 --- !u!1001 &650931971
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1554,7 +1554,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontal_range: -5
   vertical_range: 0
-  speed: 0
+  speed: 1
   rotation_rate: 0
 --- !u!50 &845792766
 Rigidbody2D:
@@ -2183,7 +2183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 594fdcf53d5103747abb296382b67b6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intro_text: {fileID: 0}
+  intro_text: {fileID: 432173714200733564}
 --- !u!61 &1389208519
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2532,7 +2532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 608a1a755d3cca04ebb4dbc74bac6a17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intro_text: {fileID: 0}
+  intro_text: {fileID: 432173714200733564}
 --- !u!61 &1611050751
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3113,7 +3113,7 @@ PrefabInstance:
     - target: {fileID: 7020089200655165285, guid: 80b0107e902f47b49a8e629df32d97d5,
         type: 3}
       propertyPath: nextLevel
-      value: Main Menu
+      value: Level 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80b0107e902f47b49a8e629df32d97d5, type: 3}
@@ -3732,7 +3732,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6b96f6a195a14942a2dac9833d88124, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intro_text: {fileID: 0}
+  intro_text: {fileID: 432173714200733564}
 --- !u!61 &2121517266
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -11,6 +11,6 @@ class ColorProgress{
                 return i;
             }
         }
-        return 8;
+        return 0;
     }
 }
