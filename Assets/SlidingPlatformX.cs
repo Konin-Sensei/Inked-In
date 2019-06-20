@@ -9,13 +9,16 @@ public class SlidingPlatformX : MonoBehaviour
     private Rigidbody2D rigidbody_2d;
     public float horizontal_range;
     public float vertical_range;
+    public float speed;
+    public float rotation_rate;
 
     void Start(){
         initial_position = transform.position;
         rigidbody_2d = GetComponent<Rigidbody2D>();
     }
     void FixedUpdate(){
-        Vector3 newPosition = new Vector3(horizontal_range*Mathf.Cos(Time.time), vertical_range*Mathf.Cos(Time.time), 0);
+        Vector3 newPosition = new Vector3(horizontal_range*Mathf.Cos(Time.time * speed), vertical_range*Mathf.Cos(Time.time * speed), 0);
         rigidbody_2d.MovePosition(initial_position + newPosition);
+        rigidbody_2d.rotation += rotation_rate;
     }
 }

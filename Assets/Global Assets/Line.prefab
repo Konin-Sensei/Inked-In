@@ -46,9 +46,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lineRenderer: {fileID: 988002163836803410}
   baseDot:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8387431531610933152, guid: 513fd6f01081d1442bc08b68b0a28310, type: 3}
+  - {fileID: 8387431531610933152, guid: 0e00d5a303cae8247b03b9745c1da649, type: 3}
+  - {fileID: 8387431531610933152, guid: aa4b0e26ce4c9d44497c35cd27b3b74d, type: 3}
   interpolationQuality: 0.015
 --- !u!120 &988002163836803410
 LineRenderer:

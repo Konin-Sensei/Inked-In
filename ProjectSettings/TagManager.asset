@@ -8,6 +8,7 @@ TagManager:
   - enemy
   - Inactive Camera
   - Dots
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -53,6 +54,9 @@ TagManager:
     locked: 0
   - name: Doors
     uniqueID: 2826652097
+    locked: 0
+  - name: Walls
+    uniqueID: 474147823
     locked: 0
   - name: Platforms
     uniqueID: 4002195693

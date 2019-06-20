@@ -14,12 +14,3 @@ class ColorProgress{
         return 8;
     }
 }
-
-class Tool{
-    public static bool[] tools = new bool[3];
-
-    public static int getTool(){
-        return 1;
-
-    }
-}

@@ -59,7 +59,6 @@ public class InkHandler : MonoBehaviour
     }
 
     public int ink_avail_quantity(){
-        print(ink_quantity - ink_used);
         return (ink_quantity - ink_used);
         
     }
