@@ -15,7 +15,7 @@ public class Patrol : AbsState
 	
 	public string getName()
 	{
-		return "patrol";
+		return "Patrol";
 	}
 
     // Update is called once per frame

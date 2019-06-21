@@ -28,13 +28,13 @@ public class walk : Helper, Ihelper
 	
 	public override void handle(string request)
 	{
+		Debug.Log(request);
 		if(request.Contains(job))
 		{
 			getMoving();
 		}
-		if(request.Contains("turn"))
+		else if(request.Contains("turn"))
 		{
-			Debug.Log("movingRight == " + movingRight);
 			movingRight = !movingRight;
 			getMoving();
 		}
@@ -68,12 +68,11 @@ public class walk : Helper, Ihelper
 		
 		if(hit.collider == null)
 		{
-			Debug.Log("in walk.checkEdges, hit.collider == null");
 			movingRight = !movingRight;//flip the value of bool
 		}
 		else
 		{
-			Debug.Log(hit.collider.name);
+			//continue moving in same direction.
 		}
 		
 	}
@@ -94,13 +93,11 @@ public class walk : Helper, Ihelper
 	private void goRight()
 	{
 		body.velocity = form.transform.right  * speed;
-		Debug.Log("goRight was called!");
 	}
 	
 	private void goLeft()
 	{
 		body.velocity = form.transform.right * -1 * speed;
-		Debug.Log("goLeft was called!");
 
 	}
 	

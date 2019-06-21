@@ -4,6 +4,9 @@ using UnityEngine;
 //this is the parent class of all states. They're supposed to hold the strings calling the features that will be needed at certain times. Patrol, for example, holds 
 //a string for walking back and forth, and a string for looking. These classes keep track of the order of using these abilities (usually just one after another) and 
 //set up a sort of separation that will hopefully make things easier. If not, we could always replace them with 2d string arrays...
+
+//honestly, if we had more time, I'd replace these classes with 2d arrays. The only issue is that we're running outta time and this janky set-up works for now
+//the only downside to Scrum is that sprints kinda force you to put up with bugs sometimes when deadlines approach and you haven't planned your code base well
 public abstract class AbsState
 {
 	protected Helper subscriber;
@@ -42,7 +45,7 @@ public abstract class AbsState
 		
 		if((actions[counter] == null))
 		{
-			this.nextJob();
+			return this.nextJob();
 		}
 		else
 		{
@@ -50,7 +53,6 @@ public abstract class AbsState
 
 		}
 		
-		return actions[counter] + "nextJobOutput";//so i put this here for testing purposes if it doesn't always lead to output.
 		
 	}
 	

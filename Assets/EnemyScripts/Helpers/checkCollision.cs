@@ -21,26 +21,30 @@ public class checkCollision : Helper, Ihelper
 	
 	public override void handle(string request)//looking to find a better way to judge movement/time
 	{
-		Debug.Log("chkr.handle was called!");
 		if(request.Contains(job))
 		{
 			if(stopped())
 			{
 				callLeader("turn");
 			}
+		}
+		else
+		{
+			if(comrade != null)
+			{
+				comrade.handle(request);
+			}
 			else
 			{
-				//do nothing
+				Debug.Log("checkCollision.handle(string) '" + request + "' helper not found.");
 			}
 		}
 	}
 	
 	public bool stopped()
 	{
-		Debug.Log(xpos + " " + body.position.x);
-		if(xpos == body.position.x)
+		if(Mathf.Abs(xpos - body.position.x) < 0.01)//this is the value for how much it must move at least for it not to think it's stopped.
 		{
-			Debug.Log("bodyStopped!");
 			return true;
 		}
 		else

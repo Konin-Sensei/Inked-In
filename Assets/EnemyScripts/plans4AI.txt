@@ -6,9 +6,14 @@ _ = tbd
 x1. we're walking on a platform, check for whether or not we're going to hit an edge and turn if so
 x2. if we hit something that makes us stop, turn around
 _2.5. see if that thing is jumpable is a stretch goal
-*3. make a look for player thingy that depends on direction walking and switch it to chase state if player isn't behind something else. (may not be easy to do)
+x3. make a look for player thingy that depends on direction walking and switch it to chase state 
+	_3.5 only switch to chase if player isn't behind something else. (may not be easy to do)
+	*3.6 Actually run towards player until hitting the edge of the plat/ink
+	_3.7 Check periodically for edge contact
 _4. after every jump, check for falling and animate until falling is false
-_5. after every fall/jump is over, check for plat/ink and use appropriate walk methods //for now, no change but there will be an ink-walk algo
+_5. periodically check for plat/ink and use appropriate walk methods //for now, no change but there will be an ink-walk algo
 _6. there will eventually be random events throughout a regular patrol session (noises with mouth movements, jumps, eventually complete, random stage-traversal)
 
+
+_7. Make all other creatures using a better COR breakdown of helpers based on improvements during the chase setup.
 

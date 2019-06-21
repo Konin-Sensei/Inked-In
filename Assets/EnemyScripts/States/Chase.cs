@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class Chase : AbsState
 {
+	private string name = "Chase";
+	
    public override bool isThis(string input)
 	{
-		if(string.Equals(input, "Chase"))
+		if(input.Contains(name))
 		{
 			return true;
 		}
@@ -15,7 +17,7 @@ public class Chase : AbsState
 
 	public string getName()
 	{
-		return "chase";
+		return "Chase";
 	}
 
 }
