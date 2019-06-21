@@ -57,7 +57,7 @@ public class Brain : Helper
 		   inner("Chase");
 	   }
 	   
-	   void inner(string newState)//changes the leader of the states array. THIS IS THE PROBLEM MY MAN!
+	   void inner(string newState)
 		{
 			AbsState[] temp = new AbsState[1];
 			if(states[0].isThis(newState)) 
@@ -70,7 +70,7 @@ public class Brain : Helper
 				for( int i=0;i<3;i++)
 				{
 					Debug.Log("we made it to the for loop, so far.");
-					if(states[i].isThis(newState))
+					if(states[i] != null && states[i].isThis(newState))
 					{
 						Debug.Log("We made it to the for loop and the IF came out true at index = " + i);
 						temp[0] = states[i];

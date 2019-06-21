@@ -12,10 +12,6 @@ public class RunToward : Helper, Ihelper
 		speed = input;
 	}
 	
-	public RunToward(string input)
-	{
-		job = input;
-	}
 	
 	public void setBody(Rigidbody2D input)
 	{
@@ -26,10 +22,10 @@ public class RunToward : Helper, Ihelper
 	{
 		
 		
-		if(request.Contains(job))//contains the word RunToward but also contains a direction (Right or Left)
+		if(request.Contains("Right") || request.Contains("Left"))//contains the word RunToward but also contains a direction (Right or Left)
 		{
-			Debug.Log("we called getMoving");
-			getMoving(job);
+			Debug.Log(request);
+			getMoving(request);
 		}
 		else
 		{
@@ -52,8 +48,9 @@ public class RunToward : Helper, Ihelper
 			Debug.Log("WE CALLED RUN RIGHT AND IT DIDN'T WORK I GUESS");
 			body.velocity = body.transform.right * speed;
 		}
-		else
+		else if(input.Contains("Left"))
 		{
+			Debug.Log(input);
 			body.velocity = body.transform.right * -1 * speed;
 		}
 		

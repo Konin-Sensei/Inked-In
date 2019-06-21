@@ -18,7 +18,6 @@ public class RunDirection : Helper, Ihelper
 	
 	public override void handle(string request)
 	{
-		Debug.Log("We're in RunDirection.handle");
 		if(request.Contains(job))
 		{
 			lookAbout();
@@ -50,13 +49,13 @@ public class RunDirection : Helper, Ihelper
 			if(playerLoc.x > myLoc.x)
 			{
 				Debug.Log("RunTowardRight" + "RunTowardRight".Contains("Right"));
-				callLeader("RunTowardRight");
+				callLeader("Right");
 
 			}
 			else
 			{
 				Debug.Log("runtwoardleft");
-				callLeader("RunTowardLeft");
+				callLeader("Left");
 			}
 		}
 	}

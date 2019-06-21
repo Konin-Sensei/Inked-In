@@ -17,7 +17,7 @@ public class Chase : AbsState
 
 	public string getName()
 	{
-		return "Chase";
+		return name;
 	}
 
 }
