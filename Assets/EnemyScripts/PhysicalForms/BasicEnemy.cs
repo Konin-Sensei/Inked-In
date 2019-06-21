@@ -43,7 +43,7 @@ public class BasicEnemy : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
 		
 		runninCompass = new RunDirection("CheckDirection");
-		runninLegs = new RunToward("RunToward");
+		runninLegs = new RunToward();//Doesn't have just one string that it responds to.
 		eyes = new Look4Player("lookAround");
 		brain = new Brain();
 		chkr = new checkCollision("checkCollisions");
@@ -68,7 +68,7 @@ public class BasicEnemy : MonoBehaviour
 		walkHelp.setLeader(brain);
 		eyes.setLeader(brain);
 		chkr.setLeader(brain);
-		runninCompass.setLeader(brain);
+		runninCompass.setLeader(runninLegs);
 		runninLegs.setLeader(brain);
 		
 		chkr.setBod(body);
