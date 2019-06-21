@@ -18,6 +18,7 @@ public class BasicEnemy : MonoBehaviour
 	public Look4Player eyes;
 	public RunToward runninLegs;
 	public RunDirection runninCompass;
+	public float raycast_length;
 
 	public int sprint;
 	public int speed;
@@ -32,11 +33,11 @@ public class BasicEnemy : MonoBehaviour
 
 
         // BoxCollider2D
-        col.size = new Vector2(1, 1.5f);
-        col.offset = new Vector2(0, -0.25f);
+        //col.size = new Vector2(1, 1.5f);
+        //col.offset = new Vector2(0, -0.25f);
 		
 		col = GetComponent<BoxCollider2D>();
-		col.size = new Vector2(1, 2.5f);
+		//col.size = new Vector2(1, 2.5f);
         body = GetComponent<Rigidbody2D>();
 		
 		runninCompass = new RunDirection("CheckDirection");
@@ -77,6 +78,7 @@ public class BasicEnemy : MonoBehaviour
 		runninLegs.setSpeed(sprint);
 		walkHelp.setSpeed(speed);
 		eyes.setFollowDist(followDist);
+		walkHelp.set_raycast_length(raycast_length);
 		
     }
 	

@@ -10,6 +10,12 @@ public class walk : Helper, Ihelper
 	private GameObject form = new GameObject();
 	private bool movingRight = true;//we may be able to use cos/sin to avoid this entirely
 	//but not if we want them to find their own path... It would speed up the setBounds class.
+	public float raycast_length;
+
+	public void set_raycast_length(float length_in){
+		raycast_length = length_in;
+
+	}
 
 	public void setSpeed(int input)
 	{
@@ -58,11 +64,11 @@ public class walk : Helper, Ihelper
 		Vector2 downLeft = new Vector2(-1, -1);
 		if(movingRight)
 		{
-			hit = Physics2D.Raycast(body.position, downRight, 4.0f, mask);//2.0f might be too far, but we'll see. Might change during testing.
+			hit = Physics2D.Raycast(body.position, downRight, raycast_length, mask);//2.0f might be too far, but we'll see. Might change during testing.
 		}
 		else
 		{
-			hit = Physics2D.Raycast(body.position, downLeft, 4.0f, mask);	
+			hit = Physics2D.Raycast(body.position, downLeft, raycast_length, mask);	
 		}
 		
 		
