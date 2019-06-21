@@ -23,6 +23,8 @@ public class BasicEnemy : MonoBehaviour
 	public int sprint;
 	public int speed;
 	public int followDist;
+
+	private bool isFlipped;
 	
     // Start is called before the first frame update
     public void Start()
@@ -84,7 +86,13 @@ public class BasicEnemy : MonoBehaviour
 	
 	void Update()
 	{
-		
+		if(body.velocity.x > 0 && !isFlipped){
+			isFlipped = true;
+			transform.Rotate(0, 180, 0);
+		}else if(body.velocity.x < 0 && isFlipped){
+			isFlipped = false;
+			transform.Rotate(0, 180, 0);
+		}
 		Debug.Log(brain.getState());//uncomment when you need to know the current state of brain.
 		brain.Update();
 	}
