@@ -10,23 +10,23 @@ public class Brain : Helper
 	
 	public void setState(AbsState input)
 	{
-		for(int i = 0; i<states.Length; i++)
+		for(int i = 0; i<3; i++)
 		{
 			if(states[i] == null)
 			{
 				states[i] = input;
+				break;
 			}
 		}
 	}
 	
-   public override void handle(string request)// brain only handles requests regarding state change. states are all contained within the brain which then
-   //changes which is in control of commands. Helpers that are specialized to change state (if checkDistance detects a player nearby it tells brain to switch to
+   public override void handle(string request)// brain only handles requests regarding state change. states are all contained within the brain that
+   //changes which state is in control of commands. Helpers that are specialized to change state (if checkDistance detects a player nearby it tells brain to switch to
    //Chase instead of Patrol).
    {
-	   Debug.Log("handle in Brain");
 	   if(request.Contains("state"))
 	   {
-		   changeState("request");
+		   changeState(request);
 	   }
 	   this.comrade.handle(request);
    }
@@ -39,7 +39,6 @@ public class Brain : Helper
        // Update is called once per frame
     public void Update()
     {
-	
         comrade.handle(states[0].nextJob());
     }
    
@@ -58,31 +57,29 @@ public class Brain : Helper
 		   inner("Chase");
 	   }
 	   
-	   void inner(string newState)//changes the leader of the states array.
-	{
-		AbsState[] temp = new AbsState[states.Length];
-		AbsState[] tempSingle = new AbsState[1];
-		for( int i=0;i<states.Length;i++)//this may have a bug. Definitely check if states aren't changing properly.
+	   void inner(string newState)
 		{
+			AbsState[] temp = new AbsState[1];
 			if(states[0].isThis(newState)) 
 			{
-				break;
-			}
-			else if(states[i].isThis(newState))
-			{
-				tempSingle[0] = states[0];
-				temp[0] = states[i];
-				temp[i] = tempSingle[0];
+				Debug.Log("We're already in that state I guess");
+				//do nothing
 			}
 			else
 			{
-				temp[i] = states[i];
+				for( int i=0;i<3;i++)
+				{
+					Debug.Log("we made it to the for loop, so far.");
+					if(states[i] != null && states[i].isThis(newState))
+					{
+						Debug.Log("We made it to the for loop and the IF came out true at index = " + i);
+						temp[0] = states[i];
+						states[i] = states[0];
+						states[0] = temp[0];
+					}
+				}
 			}
 		}
-		
-		states = temp;
-		
-	}
 	   
 	   
 	   

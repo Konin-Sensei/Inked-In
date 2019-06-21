@@ -10,6 +10,12 @@ public class walk : Helper, Ihelper
 	private GameObject form = new GameObject();
 	private bool movingRight = true;//we may be able to use cos/sin to avoid this entirely
 	//but not if we want them to find their own path... It would speed up the setBounds class.
+	public float raycast_length;
+
+	public void set_raycast_length(float length_in){
+		raycast_length = length_in;
+
+	}
 
 	public void setSpeed(int input)
 	{
@@ -28,13 +34,13 @@ public class walk : Helper, Ihelper
 	
 	public override void handle(string request)
 	{
+		Debug.Log(request);
 		if(request.Contains(job))
 		{
 			getMoving();
 		}
-		if(request.Contains("turn"))
+		else if(request.Contains("turn"))
 		{
-			Debug.Log("movingRight == " + movingRight);
 			movingRight = !movingRight;
 			getMoving();
 		}
@@ -58,22 +64,21 @@ public class walk : Helper, Ihelper
 		Vector2 downLeft = new Vector2(-1, -1);
 		if(movingRight)
 		{
-			hit = Physics2D.Raycast(body.position, downRight, 4.0f, mask);//2.0f might be too far, but we'll see. Might change during testing.
+			hit = Physics2D.Raycast(body.position, downRight, raycast_length, mask);//2.0f might be too far, but we'll see. Might change during testing.
 		}
 		else
 		{
-			hit = Physics2D.Raycast(body.position, downLeft, 4.0f, mask);	
+			hit = Physics2D.Raycast(body.position, downLeft, raycast_length, mask);	
 		}
 		
 		
 		if(hit.collider == null)
 		{
-			Debug.Log("in walk.checkEdges, hit.collider == null");
 			movingRight = !movingRight;//flip the value of bool
 		}
 		else
 		{
-			Debug.Log(hit.collider.name);
+			//continue moving in same direction.
 		}
 		
 	}
@@ -94,13 +99,11 @@ public class walk : Helper, Ihelper
 	private void goRight()
 	{
 		body.velocity = form.transform.right  * speed;
-		Debug.Log("goRight was called!");
 	}
 	
 	private void goLeft()
 	{
 		body.velocity = form.transform.right * -1 * speed;
-		Debug.Log("goLeft was called!");
 
 	}
 	

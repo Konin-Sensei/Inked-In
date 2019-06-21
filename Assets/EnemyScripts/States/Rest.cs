@@ -15,7 +15,7 @@ public class Rest : AbsState
 	
 	public string getName()
 	{
-		return "rest";
+		return "Rest";
 	}
 
  
