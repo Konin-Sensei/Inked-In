@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5d41a8b15139fb4395f68166a2b676f, type: 3}
   m_Name: Fire Platform
   m_EditorClassIdentifier: 
-  platform_design: {fileID: 21300000, guid: 5d522e22c35d8204bbe0cd7d2e2e807d, type: 3}
+  platform_design: {fileID: 21300000, guid: 139eaa89c0475064bade94cb5e1b7700, type: 3}
