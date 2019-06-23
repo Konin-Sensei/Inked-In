@@ -7,6 +7,7 @@ public class RunToward : Helper, Ihelper
 	private int speed;
 	private Rigidbody2D body;
 	
+	
 		public void setSpeed(int input)
 	{
 		speed = input;
@@ -21,10 +22,10 @@ public class RunToward : Helper, Ihelper
     public override void handle(string request)
 	{
 		
-		
-		if(request.Contains("Right") || request.Contains("Left"))//contains the word RunToward but also contains a direction (Right or Left)
+		callLeader(request);//this is to let the check4edges class know which direction we're moving.
+
+		if(request.Contains("Right") || request.Contains("Left"))//contains the word Right or Left
 		{
-			Debug.Log(request);
 			getMoving(request);
 		}
 		else
@@ -41,18 +42,45 @@ public class RunToward : Helper, Ihelper
 		
 	}
 	
+	public bool tooClose()
+	{
+		Vector2 bae = GameObject.FindWithTag("Player").transform.position;
+		if(bae != null)
+		{
+		
+		
+			if(Vector2.Distance(body.transform.position, bae)<3.0)//It's set so that if the distance is < 3.0 it won't try to approach her.
+			{
+				return true;
+			}
+			else{
+				return false;
+			}
+		}
+		Debug.Log("Player instance is null in RunToward.");
+		return false;
+		
+	}
+
+	
+	
 	private void getMoving(string input)
 	{
-		if(input.Contains("Right"))
+		Vector2 bae = GameObject.FindWithTag("Player").transform.position;
+		if(tooClose())
 		{
-			Debug.Log("WE CALLED RUN RIGHT AND IT DIDN'T WORK I GUESS");
-			body.velocity = body.transform.right * speed;
+			//do nothing...
 		}
-		else if(input.Contains("Left"))
+		else
 		{
-			Debug.Log(input);
-			body.velocity = body.transform.right * -1 * speed;
+			if(input.Contains("Right"))
+			{
+				body.velocity = body.transform.right * speed;
+			}
+			else if(input.Contains("Left"))
+			{
+				body.velocity = body.transform.right * -1 * speed;
+			}
 		}
-		
 	}
 }

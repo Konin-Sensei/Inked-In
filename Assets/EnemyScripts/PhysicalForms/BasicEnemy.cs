@@ -14,12 +14,14 @@ public class BasicEnemy : MonoBehaviour
 	public Chase chase;
 	public Patrol patrol;
 	public walk walkHelp;
-	public checkCollision chkr; //chkr
+	public checkCollision chkr; //chkr gets used in both states.
 	public Look4Player eyes;
 	public RunToward runninLegs;
 	public RunDirection runninCompass;
+	public Check4Edge runninEyes;
+	public SwitchState transition;
+	
 	public float raycast_length;
-
 	public int sprint;
 	public int speed;
 	public int followDist;
@@ -48,6 +50,8 @@ public class BasicEnemy : MonoBehaviour
 		chase = new Chase();
 		patrol = new Patrol();
 		walkHelp = new walk("walkToFarthestEdge");
+		runninEyes = new Check4Edge();
+		transition = new SwitchState();
 		
 		brain.setState(patrol);
 		brain.setState(chase);
@@ -56,36 +60,46 @@ public class BasicEnemy : MonoBehaviour
 		patrol.setJob("checkCollisions");//checks if current velocity is 0
 		patrol.setJob("lookAround");
 		chase.setJob("CheckDirection");
+		chase.setJob("checkCollisions");
+		transition.addTrigger("edge");
+		transition.addTrigger("turn");//if checkCollision tells us that we've hit a wall (which usually means turn around) we switch states.
+		transition.addResponse("statePatrol");
 		
 		brain.setComrade(walkHelp);
 		brain.setComrade(eyes);
 		brain.setComrade(chkr);
 		chkr.setComrade(runninCompass);
 		chkr.setComrade(runninLegs);
+		runninCompass.setComrade(runninEyes);
+		runninCompass.setComrade(transition);
 		
 		walkHelp.setLeader(brain);
 		eyes.setLeader(brain);
 		chkr.setLeader(brain);
 		runninCompass.setLeader(runninLegs);
-		runninLegs.setLeader(brain);
+		runninLegs.setLeader(runninEyes);
+		runninEyes.setLeader(brain);
+		transition.setLeader(brain);
 		
 		chkr.setBod(body);
 		walkHelp.setBody(body);
 		eyes.setBody(body);
 		runninLegs.setBody(body);
 		runninCompass.setBody(body);
+		runninEyes.setBody(body);
 		
 		runninLegs.setSpeed(sprint);
 		walkHelp.setSpeed(speed);
 		eyes.setFollowDist(followDist);
 		walkHelp.set_raycast_length(raycast_length);
+		runninEyes.set_raycast_length(raycast_length);
 		
     }
 	
 	void Update()
 	{
 		
-		Debug.Log(brain.getState());//uncomment when you need to know the current state of brain.
+		//Debug.Log(brain.getState());//uncomment when you need to know the current state of brain.
 		brain.Update();
 	}
 

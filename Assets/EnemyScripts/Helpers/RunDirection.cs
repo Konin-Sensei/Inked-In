@@ -48,13 +48,11 @@ public class RunDirection : Helper, Ihelper
 		{
 			if(playerLoc.x > myLoc.x)
 			{
-				Debug.Log("RunTowardRight" + "RunTowardRight".Contains("Right"));
 				callLeader("Right");
 
 			}
 			else
 			{
-				Debug.Log("runtwoardleft");
 				callLeader("Left");
 			}
 		}

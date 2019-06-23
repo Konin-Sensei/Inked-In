@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class checkCollision : Helper, Ihelper
+public class checkCollision : Helper, Ihelper//There's still an issue with this method not working well with faster enemies, but honestly I'm not worried about that rn.
 {
     private Rigidbody2D body;
 	private float xpos;
@@ -43,7 +43,7 @@ public class checkCollision : Helper, Ihelper
 	
 	public bool stopped()
 	{
-		if(Mathf.Abs(xpos - body.position.x) < 0.01)//this is the value for how much it must move at least for it not to think it's stopped.
+		if(Mathf.Abs(xpos - body.position.x) < 0.02)//this is the value for how much it must move at least for it not to think it's stopped.
 		{
 			return true;
 		}
