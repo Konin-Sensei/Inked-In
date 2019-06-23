@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2066973835955174085}
   - component: {fileID: 7513564876316298520}
   m_Layer: 0
-  m_Name: InkHandler
+  m_Name: InkHandler 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,5 +43,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49574e1abdbdd3b46849f0589490e66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ink_quantity: 1500
+  ink_quantity: 5000
   ink_used: 0

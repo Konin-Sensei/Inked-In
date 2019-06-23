@@ -11,7 +11,7 @@ public class BouncingScript : MonoBehaviour
     {
         print("Method entered");
         myBody = other.rigidbody;
-        myBody.AddForce(new Vector2(other.relativeVelocity.x, other.relativeVelocity.y+4)*bounciness, ForceMode2D.Impulse);
+        myBody.AddForce(new Vector2(other.relativeVelocity.x, other.relativeVelocity.y)*bounciness, ForceMode2D.Impulse);
 
     }
 
