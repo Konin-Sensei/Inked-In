@@ -100,15 +100,7 @@ public class BasicEnemy : MonoBehaviour
 	
 	void Update()
 	{
-		
 		//Debug.Log(brain.getState());//uncomment when you need to know the current state of brain.
-		if(body.velocity.x > 0 && !isFlipped){
-			isFlipped = true;
-			transform.Rotate(0, 180, 0);
-		}else if(body.velocity.x < 0 && isFlipped){
-			isFlipped = false;
-			transform.Rotate(0, 180, 0);
-		}
 		Debug.Log(brain.getState());//uncomment when you need to know the current state of brain.
 		brain.Update();
 	}

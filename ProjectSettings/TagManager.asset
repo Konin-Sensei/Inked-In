@@ -9,6 +9,7 @@ TagManager:
   - Inactive Camera
   - Dots
   - Bullet
+  - Barrier
   layers:
   - Default
   - TransparentFX
