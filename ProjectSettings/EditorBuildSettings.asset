@@ -12,10 +12,10 @@ EditorBuildSettings:
     path: Assets/Main Menu/Main Menu.unity
     guid: 0f5953dbda3d5b6488ed1a1564fa9c8c
   - enabled: 1
-    path: Assets/Tutorial Level/Tutorial Level.unity
+    path: Assets/Levels/Level 0/Tutorial Level.unity
     guid: 7ce768d5a87d41c47a4e0453514b8026
   - enabled: 1
-    path: Assets/Factory Level/Level 1.unity
+    path: Assets/Levels/Level 8/Level 8.unity
     guid: 430533469d45f04489e25411696d14d1
   - enabled: 1
     path: Assets/Level Select/Level Select.unity
