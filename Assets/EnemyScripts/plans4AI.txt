@@ -8,12 +8,12 @@ x2. if we hit something that makes us stop, turn around
 _2.5. see if that thing is jumpable is a stretch goal
 x3. make a look for player thingy that depends on direction walking and switch it to chase state 
 	_3.5 only switch to chase if player isn't behind something else. (may not be easy to do)
-	*3.6 Actually run towards player until hitting the edge of the plat/ink
-	_3.7 Check periodically for edge contact
-_4. after every jump, check for falling and animate until falling is false
-_5. periodically check for plat/ink and use appropriate walk methods //for now, no change but there will be an ink-walk algo
-_6. there will eventually be random events throughout a regular patrol session (noises with mouth movements, jumps, eventually complete, random stage-traversal)
+	x3.6 Actually run towards player until hitting the edge of the plat/ink
+	x3.7 Check periodically for edge contact
+_4. Make a new checkCollisions helper that just sorta lets the brain know if we haven't changed x directions in a while.
 
+*6. Make all other creatures using a better COR breakdown of helpers based on improvements during the chase setup.
 
-_7. Make all other creatures using a better COR breakdown of helpers based on improvements during the chase setup.
-
+*-Make a class for hopping
+_-Make a class that checks to see if we're still in the air and only calls hop if that's false, calls the check4Edge otherwise
+_-Set the velocity = Vector3 thingy so it just uses a Vector3 constructor with a y var for the y axis and set that y variable to whatever it already is for that body var. that way they fall properly.
