@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3431122117314079587}
   - component: {fileID: 3280930672242788971}
   - component: {fileID: 8228104752626319995}
+  - component: {fileID: 521478659146650927}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: Untagged
@@ -197,3 +198,16 @@ PolygonCollider2D:
       - {x: 0.125, y: -0.48}
       - {x: 0.145, y: -0.44}
       - {x: 0.145, y: -0.39999998}
+--- !u!114 &521478659146650927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5626258167628565902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level_name: Level 7
