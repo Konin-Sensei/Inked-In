@@ -499,7 +499,6 @@ GameObject:
   - component: {fileID: 65103803}
   - component: {fileID: 65103802}
   - component: {fileID: 65103801}
-  - component: {fileID: 65103806}
   m_Layer: 0
   m_Name: Lava
   m_TagString: Untagged
@@ -545,11 +544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD:Assets/Levels/Level 2/Level 2.unity
-  level_name: Level 2
-=======
   level_name: Underworld Level
->>>>>>> eececbb6856fbaae8fdec700b9b65adafce539c8:Assets/Levels/Level 2/Underworld Level.unity
   level_index: 2
 --- !u!114 &65103803
 MonoBehaviour:
@@ -635,20 +630,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &65103806
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 65103800}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level_name: 
-  level_index: 0
 --- !u!1001 &87459221
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -809,98 +790,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1142734421}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD:Assets/Levels/Level 2/Level 2.unity
---- !u!1 &111156826 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2027420696483752702, guid: ed44719a1342c58489b22196281766c3,
-    type: 3}
-  m_PrefabInstance: {fileID: 360154907}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &111156827
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 111156826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level_name: Level 2
-  level_index: 2
---- !u!1001 &116571685
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2027420696483752702, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_Name
-      value: Blob (9)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 7.36
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -69.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 32
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ed44719a1342c58489b22196281766c3, type: 3}
-=======
->>>>>>> eececbb6856fbaae8fdec700b9b65adafce539c8:Assets/Levels/Level 2/Underworld Level.unity
 --- !u!1 &117736363
 GameObject:
   m_ObjectHideFlags: 0
@@ -1065,26 +954,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &123302432 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2027420696483752702, guid: ed44719a1342c58489b22196281766c3,
-    type: 3}
-  m_PrefabInstance: {fileID: 911909946}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &123302433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 123302432}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level_name: Level 2
-  level_index: 2
 --- !u!1001 &129897689
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1546,86 +1415,8 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-<<<<<<< HEAD:Assets/Levels/Level 2/Level 2.unity
-  m_SourcePrefab: {fileID: 100100000, guid: 4781e8f0eba31f542961b2472bc0d7b4, type: 3}
---- !u!1 &176071991
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 176071993}
-  - component: {fileID: 176071992}
-  m_Layer: 0
-  m_Name: Overworld Skybox Handler
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &176071992
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 176071991}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fac02cc2d8f245248a2f7c042fd9cd88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  materials:
-  - {fileID: 2100000, guid: f739dde07f78f29408722af55b30797d, type: 2}
-  - {fileID: 2100000, guid: 04e9fe3ac6285be42a7e3e662b5b1ab8, type: 2}
-  - {fileID: 2100000, guid: 87a5adc5600ff1e49a899a75c6d1c39d, type: 2}
-  - {fileID: 2100000, guid: 568e1d6f0a677874e80c66776f804602, type: 2}
-  - {fileID: 2100000, guid: 8d2aef68bf5000046b3d891928ca3741, type: 2}
-  - {fileID: 2100000, guid: f46c85d88e891b44e8f19dded5951b6a, type: 2}
-  - {fileID: 2100000, guid: 42e3e0b2acb34cc438af559a19a64b40, type: 2}
-  - {fileID: 2100000, guid: 15dd1882756714f46902e60e9085f0be, type: 2}
-  - {fileID: 2100000, guid: 2ddbac47bd7533d4f953f18761b2851e, type: 2}
---- !u!4 &176071993
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 176071991}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.484989, y: 9.854382, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 36
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &177011221 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2027420696483752702, guid: ed44719a1342c58489b22196281766c3,
-    type: 3}
-  m_PrefabInstance: {fileID: 420568387}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &177011222
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 177011221}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level_name: Level 2
-  level_index: 2
---- !u!1001 &182893407
-=======
   m_SourcePrefab: {fileID: 100100000, guid: ed44719a1342c58489b22196281766c3, type: 3}
 --- !u!1001 &159873601
->>>>>>> eececbb6856fbaae8fdec700b9b65adafce539c8:Assets/Levels/Level 2/Underworld Level.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -2248,7 +2039,6 @@ GameObject:
   - component: {fileID: 223437818}
   - component: {fileID: 223437817}
   - component: {fileID: 223437816}
-  - component: {fileID: 223437821}
   m_Layer: 0
   m_Name: Lava (11)
   m_TagString: Untagged
@@ -2294,13 +2084,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD:Assets/Levels/Level 2/Level 2.unity
-  level_name: Level 2
-  level_index: 2
-=======
   level_name: Underworld Level
   level_index: 0
->>>>>>> eececbb6856fbaae8fdec700b9b65adafce539c8:Assets/Levels/Level 2/Underworld Level.unity
 --- !u!114 &223437818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2385,9 +2170,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD:Assets/Levels/Level 2/Level 2.unity
---- !u!114 &223437821
-=======
 --- !u!1 &230920525 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2027420696483752702, guid: ed44719a1342c58489b22196281766c3,
@@ -2395,26 +2177,17 @@ GameObject:
   m_PrefabInstance: {fileID: 1618372328}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &230920526
->>>>>>> eececbb6856fbaae8fdec700b9b65adafce539c8:Assets/Levels/Level 2/Underworld Level.unity
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD:Assets/Levels/Level 2/Level 2.unity
-  m_GameObject: {fileID: 223437815}
-=======
   m_GameObject: {fileID: 230920525}
->>>>>>> eececbb6856fbaae8fdec700b9b65adafce539c8:Assets/Levels/Level 2/Underworld Level.unity
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD:Assets/Levels/Level 2/Level 2.unity
-  level_name: 
-  level_index: 0
-=======
   level_name: Underworld Level
   level_index: 2
 --- !u!58 &230920527
@@ -2449,7 +2222,6 @@ CircleCollider2D:
   m_Offset: {x: 0.1882782, y: -0.08965874}
   serializedVersion: 2
   m_Radius: 1.3666973
->>>>>>> eececbb6856fbaae8fdec700b9b65adafce539c8:Assets/Levels/Level 2/Underworld Level.unity
 --- !u!1 &239976758
 GameObject:
   m_ObjectHideFlags: 0
@@ -2463,7 +2235,6 @@ GameObject:
   - component: {fileID: 239976761}
   - component: {fileID: 239976760}
   - component: {fileID: 239976759}
-  - component: {fileID: 239976764}
   m_Layer: 0
   m_Name: Lava (10)
   m_TagString: Untagged
@@ -2509,11 +2280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD:Assets/Levels/Level 2/Level 2.unity
-  level_name: Level 2
-=======
   level_name: Underworld Level
->>>>>>> eececbb6856fbaae8fdec700b9b65adafce539c8:Assets/Levels/Level 2/Underworld Level.unity
   level_index: 2
 --- !u!114 &239976761
 MonoBehaviour:
@@ -2599,20 +2366,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &239976764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 239976758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level_name: 
-  level_index: 0
 --- !u!1 &243978911
 GameObject:
   m_ObjectHideFlags: 0
@@ -2626,7 +2379,6 @@ GameObject:
   - component: {fileID: 243978914}
   - component: {fileID: 243978915}
   - component: {fileID: 243978916}
-  - component: {fileID: 243978917}
   m_Layer: 0
   m_Name: Ice Water 1
   m_TagString: Untagged
@@ -2694,11 +2446,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD:Assets/Levels/Level 2/Level 2.unity
-  m_RootOrder: 20
-=======
   m_RootOrder: 8
->>>>>>> eececbb6856fbaae8fdec700b9b65adafce539c8:Assets/Levels/Level 2/Underworld Level.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &243978914
 MonoBehaviour:
@@ -2734,11 +2482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD:Assets/Levels/Level 2/Level 2.unity
-  level_name: Level 2
-=======
   level_name: Underworld Level
->>>>>>> eececbb6856fbaae8fdec700b9b65adafce539c8:Assets/Levels/Level 2/Underworld Level.unity
   level_index: 2
 --- !u!61 &243978916
 BoxCollider2D:
@@ -2766,20 +2510,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 19.2, y: 3.220376}
   m_EdgeRadius: 0
---- !u!114 &243978917
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 243978911}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level_name: 
-  level_index: 0
 --- !u!1 &250828343
 GameObject:
   m_ObjectHideFlags: 0
@@ -2833,26 +2563,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &252373758 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2027420696483752702, guid: ed44719a1342c58489b22196281766c3,
-    type: 3}
-  m_PrefabInstance: {fileID: 1589577206}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &252373759
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 252373758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level_name: Level 2
-  level_index: 2
 --- !u!1001 &268939402
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3711,11 +3421,7 @@ PrefabInstance:
     - target: {fileID: 3424667605262900688, guid: 2eb67a232adc20045a7e959d08eb6e6a,
         type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD:Assets/Levels/Level 2/Level 2.unity
-      value: 13
-=======
       value: 50
->>>>>>> eececbb6856fbaae8fdec700b9b65adafce539c8:Assets/Levels/Level 2/Underworld Level.unity
       objectReference: {fileID: 0}
     - target: {fileID: 3424667605262900688, guid: 2eb67a232adc20045a7e959d08eb6e6a,
         type: 3}
@@ -3733,33 +3439,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-<<<<<<< HEAD:Assets/Levels/Level 2/Level 2.unity
-  m_SourcePrefab: {fileID: 100100000, guid: ed44719a1342c58489b22196281766c3, type: 3}
---- !u!1 &363418710 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2027420696483752702, guid: ed44719a1342c58489b22196281766c3,
-    type: 3}
-  m_PrefabInstance: {fileID: 1600532241}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &363418711
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 363418710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level_name: Level 2
-  level_index: 2
---- !u!1001 &370138653
-=======
   m_SourcePrefab: {fileID: 100100000, guid: 2eb67a232adc20045a7e959d08eb6e6a, type: 3}
 --- !u!1001 &375196878
->>>>>>> eececbb6856fbaae8fdec700b9b65adafce539c8:Assets/Levels/Level 2/Underworld Level.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -4063,78 +3744,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 418160434}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD:Assets/Levels/Level 2/Level 2.unity
---- !u!1001 &420568387
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2027420696483752702, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_Name
-      value: Blob (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -17.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -69.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ed44719a1342c58489b22196281766c3, type: 3}
-=======
->>>>>>> eececbb6856fbaae8fdec700b9b65adafce539c8:Assets/Levels/Level 2/Underworld Level.unity
 --- !u!4 &425134328 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3424667605262900688, guid: 2eb67a232adc20045a7e959d08eb6e6a,
@@ -4504,11 +4113,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD:Assets/Levels/Level 2/Level 2.unity
-  m_RootOrder: 8
-=======
   m_RootOrder: 9
->>>>>>> eececbb6856fbaae8fdec700b9b65adafce539c8:Assets/Levels/Level 2/Underworld Level.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &459271975
 PrefabInstance:
@@ -4678,7 +4283,6 @@ GameObject:
   - component: {fileID: 468086054}
   - component: {fileID: 468086053}
   - component: {fileID: 468086052}
-  - component: {fileID: 468086057}
   m_Layer: 0
   m_Name: Lava (2)
   m_TagString: Untagged
@@ -4724,11 +4328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD:Assets/Levels/Level 2/Level 2.unity
-  level_name: Level 2
-=======
   level_name: Underworld Level
->>>>>>> eececbb6856fbaae8fdec700b9b65adafce539c8:Assets/Levels/Level 2/Underworld Level.unity
   level_index: 2
 --- !u!114 &468086054
 MonoBehaviour:
@@ -4814,20 +4414,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &468086057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 468086051}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level_name: 
-  level_index: 0
 --- !u!1001 &484836182
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4910,7 +4496,6 @@ GameObject:
   - component: {fileID: 486046548}
   - component: {fileID: 486046547}
   - component: {fileID: 486046546}
-  - component: {fileID: 486046551}
   m_Layer: 0
   m_Name: Lava (6)
   m_TagString: Untagged
@@ -4956,11 +4541,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD:Assets/Levels/Level 2/Level 2.unity
-  level_name: Level 2
-=======
   level_name: Underworld Level
->>>>>>> eececbb6856fbaae8fdec700b9b65adafce539c8:Assets/Levels/Level 2/Underworld Level.unity
   level_index: 2
 --- !u!114 &486046548
 MonoBehaviour:
@@ -5046,20 +4627,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &486046551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 486046545}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level_name: 
-  level_index: 0
 --- !u!4 &491570806 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3424667605262900688, guid: 2eb67a232adc20045a7e959d08eb6e6a,
@@ -5469,7 +5036,6 @@ GameObject:
   - component: {fileID: 532041459}
   - component: {fileID: 532041458}
   - component: {fileID: 532041457}
-  - component: {fileID: 532041462}
   m_Layer: 0
   m_Name: Lava (8)
   m_TagString: Untagged
@@ -5515,11 +5081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD:Assets/Levels/Level 2/Level 2.unity
-  level_name: Level 2
-=======
   level_name: Underworld Level
->>>>>>> eececbb6856fbaae8fdec700b9b65adafce539c8:Assets/Levels/Level 2/Underworld Level.unity
   level_index: 2
 --- !u!114 &532041459
 MonoBehaviour:
@@ -5605,20 +5167,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &532041462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 532041456}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level_name: 
-  level_index: 0
 --- !u!4 &537339143 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5101880119057746494, guid: 7488608375fdd954793d9ba9019bc354,
@@ -5935,7 +5483,6 @@ GameObject:
   - component: {fileID: 624615555}
   - component: {fileID: 624615554}
   - component: {fileID: 624615553}
-  - component: {fileID: 624615558}
   m_Layer: 0
   m_Name: Ice Water 1 (2)
   m_TagString: Untagged
@@ -5981,11 +5528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD:Assets/Levels/Level 2/Level 2.unity
-  level_name: Level 2
-=======
   level_name: Underworld Level
->>>>>>> eececbb6856fbaae8fdec700b9b65adafce539c8:Assets/Levels/Level 2/Underworld Level.unity
   level_index: 2
 --- !u!114 &624615555
 MonoBehaviour:
@@ -6069,26 +5612,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD:Assets/Levels/Level 2/Level 2.unity
-  m_RootOrder: 10
-=======
   m_RootOrder: 11
->>>>>>> eececbb6856fbaae8fdec700b9b65adafce539c8:Assets/Levels/Level 2/Underworld Level.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &624615558
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 624615552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level_name: 
-  level_index: 0
 --- !u!1001 &644178589
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6433,7 +5958,6 @@ GameObject:
   - component: {fileID: 706924049}
   - component: {fileID: 706924048}
   - component: {fileID: 706924047}
-  - component: {fileID: 706924052}
   m_Layer: 0
   m_Name: Lava (5)
   m_TagString: Untagged
@@ -6479,11 +6003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD:Assets/Levels/Level 2/Level 2.unity
-  level_name: Level 2
-=======
   level_name: Underworld Level
->>>>>>> eececbb6856fbaae8fdec700b9b65adafce539c8:Assets/Levels/Level 2/Underworld Level.unity
   level_index: 2
 --- !u!114 &706924049
 MonoBehaviour:
@@ -6569,20 +6089,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &706924052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 706924046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level_name: 
-  level_index: 0
 --- !u!4 &708554733 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3424667605262900688, guid: 2eb67a232adc20045a7e959d08eb6e6a,
@@ -6757,7 +6263,6 @@ GameObject:
   - component: {fileID: 715080228}
   - component: {fileID: 715080227}
   - component: {fileID: 715080226}
-  - component: {fileID: 715080231}
   m_Layer: 0
   m_Name: Lava (3)
   m_TagString: Untagged
@@ -6803,11 +6308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD:Assets/Levels/Level 2/Level 2.unity
-  level_name: Level 2
-=======
   level_name: Underworld Level
->>>>>>> eececbb6856fbaae8fdec700b9b65adafce539c8:Assets/Levels/Level 2/Underworld Level.unity
   level_index: 2
 --- !u!114 &715080228
 MonoBehaviour:
@@ -6891,105 +6392,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD:Assets/Levels/Level 2/Level 2.unity
-  m_RootOrder: 24
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &715080231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 715080225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level_name: 
-  level_index: 0
-=======
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> eececbb6856fbaae8fdec700b9b65adafce539c8:Assets/Levels/Level 2/Underworld Level.unity
 --- !u!4 &730435105 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3424667605262900688, guid: 2eb67a232adc20045a7e959d08eb6e6a,
     type: 3}
   m_PrefabInstance: {fileID: 1674318429}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD:Assets/Levels/Level 2/Level 2.unity
---- !u!1001 &739722033
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2027420696483752702, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_Name
-      value: Blob (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 60.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -69.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ed44719a1342c58489b22196281766c3, type: 3}
-=======
->>>>>>> eececbb6856fbaae8fdec700b9b65adafce539c8:Assets/Levels/Level 2/Underworld Level.unity
 --- !u!1001 &741451440
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7126,26 +6536,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1694996320}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &788068744 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2027420696483752702, guid: ed44719a1342c58489b22196281766c3,
-    type: 3}
-  m_PrefabInstance: {fileID: 1643303580}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &788068745
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 788068744}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level_name: Level 2
-  level_index: 2
 --- !u!4 &796902694 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3424667605262900688, guid: 2eb67a232adc20045a7e959d08eb6e6a,
@@ -7327,7 +6717,6 @@ GameObject:
   - component: {fileID: 846443077}
   - component: {fileID: 846443076}
   - component: {fileID: 846443075}
-  - component: {fileID: 846443080}
   m_Layer: 0
   m_Name: Ice Water 1 (1)
   m_TagString: Untagged
@@ -7373,11 +6762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD:Assets/Levels/Level 2/Level 2.unity
-  level_name: Level 2
-=======
   level_name: Underworld Level
->>>>>>> eececbb6856fbaae8fdec700b9b65adafce539c8:Assets/Levels/Level 2/Underworld Level.unity
   level_index: 2
 --- !u!114 &846443077
 MonoBehaviour:
@@ -7461,26 +6846,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD:Assets/Levels/Level 2/Level 2.unity
-  m_RootOrder: 9
-=======
   m_RootOrder: 10
->>>>>>> eececbb6856fbaae8fdec700b9b65adafce539c8:Assets/Levels/Level 2/Underworld Level.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &846443080
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 846443074}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level_name: 
-  level_index: 0
 --- !u!4 &847788531 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 254447295821628019, guid: 4781e8f0eba31f542961b2472bc0d7b4,
@@ -7655,78 +7022,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2022785906}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD:Assets/Levels/Level 2/Level 2.unity
---- !u!1001 &926832989
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2027420696483752702, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_Name
-      value: Blob
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -12.818164
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -25.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ed44719a1342c58489b22196281766c3, type: 3}
-=======
->>>>>>> eececbb6856fbaae8fdec700b9b65adafce539c8:Assets/Levels/Level 2/Underworld Level.unity
 --- !u!1001 &926959484
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9968,78 +9263,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4781e8f0eba31f542961b2472bc0d7b4, type: 3}
-<<<<<<< HEAD:Assets/Levels/Level 2/Level 2.unity
---- !u!1001 &1225948300
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2027420696483752702, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_Name
-      value: Blob (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -10.91
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -69.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ed44719a1342c58489b22196281766c3, type: 3}
-=======
->>>>>>> eececbb6856fbaae8fdec700b9b65adafce539c8:Assets/Levels/Level 2/Underworld Level.unity
 --- !u!4 &1231095761 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 254447295821628019, guid: 4781e8f0eba31f542961b2472bc0d7b4,
@@ -10127,26 +9350,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1306809045}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1261790821 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2027420696483752702, guid: ed44719a1342c58489b22196281766c3,
-    type: 3}
-  m_PrefabInstance: {fileID: 926832989}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1261790822
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1261790821}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level_name: Level 2
-  level_index: 2
 --- !u!4 &1268757895 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5101880119057746494, guid: 7488608375fdd954793d9ba9019bc354,
@@ -10648,7 +9851,6 @@ GameObject:
   - component: {fileID: 1353776565}
   - component: {fileID: 1353776564}
   - component: {fileID: 1353776563}
-  - component: {fileID: 1353776568}
   m_Layer: 0
   m_Name: Lava (1)
   m_TagString: Untagged
@@ -10694,11 +9896,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD:Assets/Levels/Level 2/Level 2.unity
-  level_name: Level 2
-=======
   level_name: Underworld Level
->>>>>>> eececbb6856fbaae8fdec700b9b65adafce539c8:Assets/Levels/Level 2/Underworld Level.unity
   level_index: 2
 --- !u!114 &1353776565
 MonoBehaviour:
@@ -10784,20 +9982,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1353776568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1353776562}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level_name: 
-  level_index: 0
 --- !u!1001 &1367096558
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11643,7 +10827,6 @@ GameObject:
   - component: {fileID: 1531074698}
   - component: {fileID: 1531074697}
   - component: {fileID: 1531074696}
-  - component: {fileID: 1531074701}
   m_Layer: 0
   m_Name: Lava (9)
   m_TagString: Untagged
@@ -11689,11 +10872,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD:Assets/Levels/Level 2/Level 2.unity
-  level_name: Level 2
-=======
   level_name: Underworld Level
->>>>>>> eececbb6856fbaae8fdec700b9b65adafce539c8:Assets/Levels/Level 2/Underworld Level.unity
   level_index: 2
 --- !u!114 &1531074698
 MonoBehaviour:
@@ -11779,20 +10958,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1531074701
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1531074695}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level_name: 
-  level_index: 0
 --- !u!1001 &1539583259
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12053,7 +11218,6 @@ GameObject:
   - component: {fileID: 1565001200}
   - component: {fileID: 1565001199}
   - component: {fileID: 1565001198}
-  - component: {fileID: 1565001203}
   m_Layer: 0
   m_Name: Lava (7)
   m_TagString: Untagged
@@ -12099,11 +11263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD:Assets/Levels/Level 2/Level 2.unity
-  level_name: Level 2
-=======
   level_name: Underworld Level
->>>>>>> eececbb6856fbaae8fdec700b9b65adafce539c8:Assets/Levels/Level 2/Underworld Level.unity
   level_index: 2
 --- !u!114 &1565001200
 MonoBehaviour:
@@ -12189,20 +11349,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1565001203
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1565001197}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level_name: 
-  level_index: 0
 --- !u!1001 &1582008623
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12398,74 +11544,6 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0.15305328, y: -0.021635056}
   serializedVersion: 2
-<<<<<<< HEAD:Assets/Levels/Level 2/Level 2.unity
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2027420696483752702, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_Name
-      value: Blob (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 39.94
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -69.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 17
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ed44719a1342c58489b22196281766c3, type: 3}
---- !u!1001 &1600532241
-=======
   m_Radius: 1.6055393
 --- !u!58 &1614434119
 CircleCollider2D:
@@ -12484,7 +11562,6 @@ CircleCollider2D:
   serializedVersion: 2
   m_Radius: 1.3666973
 --- !u!1001 &1618372328
->>>>>>> eececbb6856fbaae8fdec700b9b65adafce539c8:Assets/Levels/Level 2/Underworld Level.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -12534,11 +11611,7 @@ PrefabInstance:
     - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
         type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD:Assets/Levels/Level 2/Level 2.unity
-      value: 19
-=======
       value: 28
->>>>>>> eececbb6856fbaae8fdec700b9b65adafce539c8:Assets/Levels/Level 2/Underworld Level.unity
       objectReference: {fileID: 0}
     - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
         type: 3}
@@ -12745,78 +11818,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2117321969}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD:Assets/Levels/Level 2/Level 2.unity
---- !u!1001 &1643303580
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2027420696483752702, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_Name
-      value: Blob (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -7.45
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -25.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ed44719a1342c58489b22196281766c3, type: 3}
-=======
->>>>>>> eececbb6856fbaae8fdec700b9b65adafce539c8:Assets/Levels/Level 2/Underworld Level.unity
 --- !u!4 &1652077070 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3424667605262900688, guid: 2eb67a232adc20045a7e959d08eb6e6a,
@@ -13654,26 +12655,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1487045873}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1726769878 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2027420696483752702, guid: ed44719a1342c58489b22196281766c3,
-    type: 3}
-  m_PrefabInstance: {fileID: 739722033}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1726769879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1726769878}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level_name: Level 2
-  level_index: 2
 --- !u!1 &1732972841
 GameObject:
   m_ObjectHideFlags: 0
@@ -13687,7 +12668,6 @@ GameObject:
   - component: {fileID: 1732972844}
   - component: {fileID: 1732972843}
   - component: {fileID: 1732972842}
-  - component: {fileID: 1732972847}
   m_Layer: 0
   m_Name: Lava (4)
   m_TagString: Untagged
@@ -13733,11 +12713,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD:Assets/Levels/Level 2/Level 2.unity
-  level_name: Level 2
-=======
   level_name: Underworld Level
->>>>>>> eececbb6856fbaae8fdec700b9b65adafce539c8:Assets/Levels/Level 2/Underworld Level.unity
   level_index: 2
 --- !u!114 &1732972844
 MonoBehaviour:
@@ -13823,20 +12799,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1732972847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1732972841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level_name: 
-  level_index: 0
 --- !u!1001 &1733432664
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14695,26 +13657,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1911645334}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1913502353 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2027420696483752702, guid: ed44719a1342c58489b22196281766c3,
-    type: 3}
-  m_PrefabInstance: {fileID: 1928830481}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1913502354
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1913502353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level_name: Level 2
-  level_index: 2
 --- !u!1001 &1920011473
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14896,78 +13838,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c85c80e5fbc27a4381b1680915bd69f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD:Assets/Levels/Level 2/Level 2.unity
---- !u!1001 &1928830481
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2027420696483752702, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_Name
-      value: Blob (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 32.71
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -69.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027420696483752691, guid: ed44719a1342c58489b22196281766c3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ed44719a1342c58489b22196281766c3, type: 3}
-=======
->>>>>>> eececbb6856fbaae8fdec700b9b65adafce539c8:Assets/Levels/Level 2/Underworld Level.unity
 --- !u!1001 &1939574236
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15201,15 +14071,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1954248564}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD:Assets/Levels/Level 2/Level 2.unity
---- !u!1 &1958383855 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2027420696483752702, guid: ed44719a1342c58489b22196281766c3,
-    type: 3}
-  m_PrefabInstance: {fileID: 1225948300}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1958383856
-=======
 --- !u!1 &1961629715 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2027420696483752702, guid: ed44719a1342c58489b22196281766c3,
@@ -15217,26 +14078,17 @@ GameObject:
   m_PrefabInstance: {fileID: 2077078674}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1961629716
->>>>>>> eececbb6856fbaae8fdec700b9b65adafce539c8:Assets/Levels/Level 2/Underworld Level.unity
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD:Assets/Levels/Level 2/Level 2.unity
-  m_GameObject: {fileID: 1958383855}
-=======
   m_GameObject: {fileID: 1961629715}
->>>>>>> eececbb6856fbaae8fdec700b9b65adafce539c8:Assets/Levels/Level 2/Underworld Level.unity
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD:Assets/Levels/Level 2/Level 2.unity
-  level_name: Level 2
-  level_index: 2
-=======
   level_name: Underworld Level
   level_index: 2
 --- !u!58 &1961629717
@@ -15271,7 +14123,6 @@ CircleCollider2D:
   m_Offset: {x: 0.1882782, y: -0.08965874}
   serializedVersion: 2
   m_Radius: 1.3666973
->>>>>>> eececbb6856fbaae8fdec700b9b65adafce539c8:Assets/Levels/Level 2/Underworld Level.unity
 --- !u!1001 &1977331980
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16624,26 +15475,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2eb67a232adc20045a7e959d08eb6e6a, type: 3}
---- !u!1 &2124721527 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2027420696483752702, guid: ed44719a1342c58489b22196281766c3,
-    type: 3}
-  m_PrefabInstance: {fileID: 116571685}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2124721528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2124721527}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level_name: Level 2
-  level_index: 2
 --- !u!1001 &2141966524
 PrefabInstance:
   m_ObjectHideFlags: 0
