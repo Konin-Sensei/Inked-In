@@ -8,6 +8,8 @@ public class Geyser : MonoBehaviour
     public float height;
     public float interval;
     public float speed;
+	public Geyser parent;
+	public Geyser child;
     float Timer;
     Vector3 restPosition;
     bool isUp;
@@ -22,10 +24,10 @@ public class Geyser : MonoBehaviour
     }
 
     void FixedUpdate(){
-        if(Timer <= 0){
+        if((Timer <= 0) && ((child == null) || (child.isUp))){//either, the timer is 0 and there's no parent (just one geyser) or the parent is already up so we can start
             activate_geyser();
         }
-        else if(isUp){
+        else if((parent == null) && isUp){//you need to be the topmost geyser to oscillate
             oscillate();
         }
         else if(hasOscillated){
@@ -54,6 +56,10 @@ public class Geyser : MonoBehaviour
             isUp = false;
             hasOscillated = true;
             oscillation_length = duration;
+			if(child != null)
+			{
+				packUpAndGo();
+			}
         }
     }
 
@@ -65,4 +71,10 @@ public class Geyser : MonoBehaviour
             hasOscillated = false;
         }
     }
+	
+	void packUpAndGo()
+	{
+		hasOscillated = true;
+		child.packUpAndGo();
+	}
 }
