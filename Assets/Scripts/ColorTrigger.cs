@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class ColorTrigger : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void setProgress ()
     {
-        
+        ColorProgress.level[8] = true;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
