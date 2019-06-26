@@ -1,0 +1,18 @@
+Ricks "docs"
+This is just to help me understand and keep in mind all the classes and what their ins and outs are. Should make setting up Jumpers and Flyers easier.
+
+Brain(statePatrol || stateRest|| stateChase) -> switches out active stateChase
+
+Check4Edge("Right" || "Left") -> raycasts in that direction and replies "edge"
+
+checkCollision(job) -> checks if not moving(within reason) and outputs "turn"
+
+Hop("Right" || "Left") -> hops if touching ground
+
+HopDirection("edge" || "turn") -> and returns new direction
+
+Look4Player(job) -> "stateChase"
+
+RunDirection(job) -> "Right" or "Left" depending on players direction.
+
+SwitchState(job[5]) -> take one of 5 and returns one preset string

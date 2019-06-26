@@ -25,8 +25,6 @@ public class BasicEnemy : MonoBehaviour
 	public int sprint;
 	public int speed;
 	public int followDist;
-
-	private bool isFlipped;
 	
     // Start is called before the first frame update
     public void Start()
@@ -52,7 +50,7 @@ public class BasicEnemy : MonoBehaviour
 		chase = new Chase();
 		patrol = new Patrol();
 		walkHelp = new walk("walkToFarthestEdge");
-		runninEyes = new Check4Edge();
+		runninEyes = new Check4Edge("Z");
 		transition = new SwitchState();
 		
 		brain.setState(patrol);
@@ -100,8 +98,8 @@ public class BasicEnemy : MonoBehaviour
 	
 	void Update()
 	{
+		
 		//Debug.Log(brain.getState());//uncomment when you need to know the current state of brain.
-		Debug.Log(brain.getState());//uncomment when you need to know the current state of brain.
 		brain.Update();
 	}
 

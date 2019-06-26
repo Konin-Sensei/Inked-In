@@ -28,10 +28,13 @@ public class SwitchState : Helper, Ihelper//this class is set up so that for eve
    {
 	   for(int i = 0; i<trigger.Length; i++)
 	   {
+		   if(trigger[i] != null)
+		   {
 		   if(trigger[i].Contains(input))
 		   {
 			   callLeader(stateCall);
 			   break;
+		   }
 		   }
 	   }
    }
