@@ -4,23 +4,21 @@ using UnityEngine;
 
 public class FlyerAnimator : MonoBehaviour
 {
-    Animator flyer_animator;
-    Rigidbody2D flyer_body;
+    public Transform player;
     bool isFlipped;
+    SpriteRenderer sprite_renderer;
 
     void Start(){
-        flyer_animator = GetComponent<Animator>();
-        flyer_body = GetComponent<Rigidbody2D>();
+        sprite_renderer = GetComponent<SpriteRenderer>();
     }
 
     void Update(){
-        flyer_animator.SetFloat("Velocity",flyer_body.velocity.x);
-        if(flyer_body.velocity.x > 0 && isFlipped){
-            isFlipped = false;
-            flyer_animator.SetBool("Mirror", isFlipped);
-        }else if(flyer_body.velocity.x < 0 && !isFlipped){
+        if(transform.position.x < player.position.x){
             isFlipped = true;
-            flyer_animator.SetBool("Mirror", isFlipped);
+            sprite_renderer.flipX = isFlipped;
+        }else if(transform.position.x > player.position.x){
+            isFlipped = false;
+            sprite_renderer.flipX = isFlipped;
         }
     }
 }

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3062516540121926226}
   - component: {fileID: 3062516540121926229}
   - component: {fileID: 43770536502065392}
+  - component: {fileID: -7332434758928475860}
   m_Layer: 0
   m_Name: IceSpike
   m_TagString: Untagged
@@ -219,3 +220,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba943c8c3e0f6044fbcb87a04f5e8a5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-7332434758928475860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3062516540121926228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level_name: Ice Level
+  level_index: 1
