@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7379317542621465712}
   - component: {fileID: 7379317542621465727}
   - component: {fileID: 7379317542621465726}
+  - component: {fileID: 1729126544670051021}
   m_Layer: 0
   m_Name: Bullet 1
   m_TagString: Bullet
@@ -94,6 +95,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: -20
+  duration: 0
 --- !u!58 &7379317542621465726
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -110,3 +112,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 2.415
+--- !u!114 &1729126544670051021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7379317542621465725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level_name: Level 9
+  level_index: 9

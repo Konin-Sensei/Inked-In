@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: d4e9cd72d20c2fc4abdb66cf3196f7f7, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -1395,15 +1395,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   materials:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 2af60fdb9ecbc9444965ce95f25e4a45, type: 2}
+  - {fileID: 2100000, guid: 106ec45e5c806be429eb0eef13d677ae, type: 2}
+  - {fileID: 2100000, guid: 3a89d764185604348aa5c73f8212fb94, type: 2}
+  - {fileID: 2100000, guid: ecc454db6b35c1240b633c0ad166b050, type: 2}
+  - {fileID: 2100000, guid: d4e9cd72d20c2fc4abdb66cf3196f7f7, type: 2}
+  - {fileID: 2100000, guid: d4e9cd72d20c2fc4abdb66cf3196f7f7, type: 2}
+  - {fileID: 2100000, guid: d4e9cd72d20c2fc4abdb66cf3196f7f7, type: 2}
+  - {fileID: 2100000, guid: f41da70c84eaf3746ba0bf9bc3b1bce5, type: 2}
+  - {fileID: 2100000, guid: f41da70c84eaf3746ba0bf9bc3b1bce5, type: 2}
 --- !u!4 &96444822
 Transform:
   m_ObjectHideFlags: 0
@@ -7761,6 +7761,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   duration: 1
   height: 4
+  length: 0
   interval: 1
   speed: 15
 --- !u!212 &584470819
@@ -11337,6 +11338,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   duration: 1
   height: 4
+  length: 0
   interval: 0.9
   speed: 15
 --- !u!212 &910928980
@@ -15538,7 +15540,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 2e310f58edb8e7d49a5ed234ca58742f, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -16947,6 +16949,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   duration: 1
   height: 4
+  length: 0
   interval: 1.1
   speed: 15
 --- !u!212 &1381249058
@@ -21855,6 +21858,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   duration: 1
   height: 4
+  length: 0
   interval: 1.3
   speed: 15
 --- !u!212 &1771247544
@@ -25476,6 +25480,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   duration: 1
   height: 4
+  length: 0
   interval: 0.9
   speed: 15
 --- !u!212 &1970271174
@@ -28388,4 +28393,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextLevel: Level 5
-  audio_source: {fileID: 0}
+  audio_source: {fileID: 1318599846}
