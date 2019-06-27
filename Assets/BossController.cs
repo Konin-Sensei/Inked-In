@@ -15,7 +15,7 @@ public class BossController : MonoBehaviour
 
     // Update is called once per frame
     void FixedUpdate(){
-        Vector3 forward = new Vector3(1, 0, 0);
-        rigidbody.MovePosition(transform.position + (forward * Time.deltaTime * speed));
+        Vector3 forward = new Vector3(Time.deltaTime * speed, 0, 0);
+        rigidbody.MovePosition(transform.position + forward);
     }
 }

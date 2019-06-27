@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4010058441644836486
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4010058441644836480}
+  - component: {fileID: 4010058441644836481}
+  m_Layer: 0
+  m_Name: Skybox Handler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4010058441644836480
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4010058441644836486}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.354974, y: 1.1520087, z: -2280.9707}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4010058441644836481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4010058441644836486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fac02cc2d8f245248a2f7c042fd9cd88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materials:
+  - {fileID: 2100000, guid: 911458e810df74247908542d6b504b18, type: 2}
+  - {fileID: 2100000, guid: 793329507d784ab4da535f5d40544357, type: 2}
+  - {fileID: 2100000, guid: e06e8d97b795b9a499b35b6290ddb62a, type: 2}
+  - {fileID: 2100000, guid: ad719c95b2d50794b8048941b736efa4, type: 2}
+  - {fileID: 2100000, guid: 7f84cb4422f23e445ae1a33176dedcf5, type: 2}
+  - {fileID: 2100000, guid: 2cbfb86bb14ae6f40a1c6cb82904056e, type: 2}
+  - {fileID: 2100000, guid: fd041c7a8dd5c8844a6be0aec70a4eec, type: 2}
+  - {fileID: 2100000, guid: 3570305f00e97574c97df10a4e12ff8a, type: 2}
+  - {fileID: 2100000, guid: 65c9c8c3f4027bc4bafbe1a093ef756e, type: 2}
