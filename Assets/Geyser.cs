@@ -75,6 +75,7 @@ public class Geyser : MonoBehaviour
 	void packUpAndGo()
 	{
 		hasOscillated = true;
-		child.packUpAndGo();
+		if(child != null)
+			child.packUpAndGo();
 	}
 }
