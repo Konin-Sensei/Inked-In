@@ -12708,7 +12708,7 @@ PrefabInstance:
     - target: {fileID: 7020089200655165285, guid: 80b0107e902f47b49a8e629df32d97d5,
         type: 3}
       propertyPath: nextLevel
-      value: Archipelago
+      value: Level 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80b0107e902f47b49a8e629df32d97d5, type: 3}
