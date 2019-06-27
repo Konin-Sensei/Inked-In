@@ -1072,10 +1072,10 @@ RectTransform:
   m_Father: {fileID: 1572269433}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -326.15, y: 170.04}
-  m_SizeDelta: {x: 51.89, y: 43.09}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 247.85, y: -81.96001}
+  m_SizeDelta: {x: 51.890015, y: 43.089996}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &800762939
 MonoBehaviour:
@@ -1839,6 +1839,78 @@ RectTransform:
   m_AnchoredPosition: {x: 779, y: 447}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1294241115
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1294241117}
+  - component: {fileID: 1294241116}
+  - component: {fileID: 1294241118}
+  m_Layer: 0
+  m_Name: DeathLine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1294241116
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294241115}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 10.105255, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 25.75531, y: 1}
+  m_EdgeRadius: 0
+--- !u!4 &1294241117
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294241115}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 439.58, y: 276.2, z: -3.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1294241118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294241115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1ec112ab166fd94ba078f4da4da9ce2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level_name: Main Menu
+  level_index: 0
 --- !u!1 &1296847634
 GameObject:
   m_ObjectHideFlags: 0
@@ -2692,12 +2764,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
+      - m_Target: {fileID: 1637887008}
+        m_MethodName: OnMouseDown
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2774,6 +2846,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acfa343250db8754184920a9b1d0d26d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 1637887004}
+  unMuted:
+    m_HighlightedSprite: {fileID: 21300000, guid: 2c28c9d77df89a24d8b41a25bbedf2a1,
+      type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: d6c5db5620de8e24d9e704d6594c2c42, type: 3}
+    m_SelectedSprite: {fileID: 21300000, guid: ad744ec3228a5f84d9a0d95e7a2bbf8e, type: 3}
+    m_DisabledSprite: {fileID: 21300000, guid: ad744ec3228a5f84d9a0d95e7a2bbf8e, type: 3}
+  muted:
+    m_HighlightedSprite: {fileID: 21300000, guid: 5cb699d791ce5734baf087e4995de64d,
+      type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: 6c0b9b6c5b04edd42bef43fd4055b2e0, type: 3}
+    m_SelectedSprite: {fileID: 21300000, guid: 5d30e555a8e30ae45a6623e074719a63, type: 3}
+    m_DisabledSprite: {fileID: 21300000, guid: 5d30e555a8e30ae45a6623e074719a63, type: 3}
+  audioSource: {fileID: 1979650191}
 --- !u!1 &1645747247
 GameObject:
   m_ObjectHideFlags: 0
@@ -3127,7 +3213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
