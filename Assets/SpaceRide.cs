@@ -14,6 +14,8 @@ public class SpaceRide : MonoBehaviour
     public GameObject gray_unlocker;
     bool gray_unlocked;
     bool doorGenerated;
+    public float altitude;
+    float sign;
 
     void Start(){
         rigidbody = GetComponent<Rigidbody2D>();
@@ -23,7 +25,12 @@ public class SpaceRide : MonoBehaviour
     }
 
     void FixedUpdate(){
-        Vector3 forward = new Vector3(1, -1 * altitude_rate * transform.position.y, 0);
+        if(transform.position.y > altitude){
+            sign = -1;
+        }else{
+            sign = 1;
+        }
+        Vector3 forward = new Vector3(1, sign * altitude_rate * (transform.position.y - altitude), 0);
         rigidbody.MovePosition(transform.position + (forward * Time.deltaTime * speed));
         Debug.DrawRay(transform.position, forward, Color.red, 1f, true);
         Timer -= Time.deltaTime;

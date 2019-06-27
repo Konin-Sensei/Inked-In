@@ -26,6 +26,7 @@ public class GenerateObstacles : MonoBehaviour
             GameObject obstacle_clone = Instantiate(obstacle, newPosition, Quaternion.Euler(0f, 0f, Random.Range(0f,rotation_max)));
             Timer = Random.Range(spawn_time_min, spawn_time_max);
             obstacle_clone.GetComponent<PlayerDeath>().level_name = "Level 7";
+            obstacle_clone.GetComponent<PlayerDeath>().level_index = 7;
         }
     }
 }
