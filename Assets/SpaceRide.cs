@@ -39,8 +39,8 @@ public class SpaceRide : MonoBehaviour
             gray_unlocked = true;
         }
         if(Timer < 0 && !doorGenerated){
-            endLevel();
             doorGenerated = true;
+            endLevel();
         }
     }
 

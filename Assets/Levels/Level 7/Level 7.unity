@@ -301,11 +301,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 30
   altitude_rate: 0.01
-  level_duration: 10
-  portal: {fileID: 5100409808555642445, guid: dc586194a14c0134bad4539b6505c7a9, type: 3}
+  level_duration: 60
+  portal: {fileID: 5587929802901321640, guid: 4ffbdf95514dc754b86163d7d7839add, type: 3}
   audio_source: {fileID: 1318599846}
   gray_unlocker: {fileID: 3354109725826889777, guid: 85f24a2ab4f3d744ab5ccf0d57f27e5d,
     type: 3}
+  altitude: 0
 --- !u!61 &681251169
 BoxCollider2D:
   m_ObjectHideFlags: 0
