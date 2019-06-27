@@ -6,6 +6,7 @@ public class BurstAnt : MonoBehaviour
 {
     public float duration;
     public float height;
+    public float length;
     public float interval;
     public float speed;
     float Timer;
@@ -36,7 +37,7 @@ public class BurstAnt : MonoBehaviour
     }
 
     void activate_geyser(){
-        Vector3 desiredPosition = new Vector3(restPosition.x, restPosition.y + height, 0);
+        Vector3 desiredPosition = new Vector3(restPosition.x + length, restPosition.y + height, 0);
         Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, speed * Time.deltaTime);
         transform.position = smoothedPosition;
         if(Vector3.Distance(transform.position, desiredPosition) < 0.4){
@@ -46,8 +47,17 @@ public class BurstAnt : MonoBehaviour
     }
 
     void oscillate(){
+        float x;
+        float y;
         if(oscillation_length > 0){
-            Vector3 desiredPosition = new Vector3(transform.position.x, transform.position.y + Time.deltaTime * Mathf.Cos(Time.time), 0);
+            if(length > 0){
+                x = Time.deltaTime * Mathf.Cos(Time.time);
+                y = 0;
+            }else{
+                y = Time.deltaTime * Mathf.Cos(Time.time);
+                x = 0;
+            }
+            Vector3 desiredPosition = new Vector3(transform.position.x + x, transform.position.y + y, 0);
             transform.position = desiredPosition;
             oscillation_length -= Time.deltaTime;
         }else{
