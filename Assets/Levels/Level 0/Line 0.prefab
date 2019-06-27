@@ -47,8 +47,8 @@ MonoBehaviour:
   lineRenderer: {fileID: 988002163836803410}
   baseDot:
   - {fileID: 8387431531610933152, guid: 513fd6f01081d1442bc08b68b0a28310, type: 3}
-  - {fileID: 8387431531610933152, guid: 0e00d5a303cae8247b03b9745c1da649, type: 3}
-  - {fileID: 2155639859444257219, guid: 56500d28e95c85d4bb7b53d4cd54b50b, type: 3}
+  - {fileID: 8387431531610933152, guid: 513fd6f01081d1442bc08b68b0a28310, type: 3}
+  - {fileID: 8387431531610933152, guid: 513fd6f01081d1442bc08b68b0a28310, type: 3}
   interpolationQuality: 0.015
 --- !u!120 &988002163836803410
 LineRenderer:

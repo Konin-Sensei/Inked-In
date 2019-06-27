@@ -10,7 +10,6 @@ public class PauseMenu2 : MonoBehaviour {
 	public GameObject pauseMenuUI;
 	public GameObject lineDrawer;
 	
-	// Update is called once per frame
 	void Update () {
 
 		if (isPaused) {
