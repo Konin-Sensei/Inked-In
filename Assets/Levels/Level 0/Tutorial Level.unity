@@ -4853,7 +4853,7 @@ PrefabInstance:
     - target: {fileID: 7020089200655165285, guid: 80b0107e902f47b49a8e629df32d97d5,
         type: 3}
       propertyPath: nextLevel
-      value: Level 1
+      value: Ice Level
       objectReference: {fileID: 0}
     - target: {fileID: 7020089200655165285, guid: 80b0107e902f47b49a8e629df32d97d5,
         type: 3}
