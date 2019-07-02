@@ -1444,7 +1444,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Inked-In Version 0.1
+  m_Text: Inked-In Version 1.0
 --- !u!222 &964977422
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -16,6 +16,9 @@ public class Bullet : MonoBehaviour
         if(other.tag == "Barrier"){
             Destroy(gameObject);
         }
+        if(other.tag == "Dots"){
+            Destroy(gameObject);
+        }
     }
 
     void Update(){

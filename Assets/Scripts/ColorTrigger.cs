@@ -6,7 +6,8 @@ public class ColorTrigger : MonoBehaviour
 {
     public void setProgress ()
     {
-        ColorProgress.level[8] = true;
+        for(int i =0; i< 9; i++)
+            ColorProgress.level[i] = true;
     }
 
 }

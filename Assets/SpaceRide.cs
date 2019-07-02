@@ -30,7 +30,7 @@ public class SpaceRide : MonoBehaviour
         }else{
             sign = 1;
         }
-        Vector3 forward = new Vector3(1, sign * altitude_rate * (transform.position.y - altitude), 0);
+        Vector3 forward = new Vector3(1, sign * altitude_rate * Mathf.Abs(transform.position.y - altitude), 0);
         rigidbody.MovePosition(transform.position + (forward * Time.deltaTime * speed));
         Debug.DrawRay(transform.position, forward, Color.red, 1f, true);
         Timer -= Time.deltaTime;
