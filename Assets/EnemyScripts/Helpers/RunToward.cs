@@ -6,6 +6,7 @@ public class RunToward : Helper, Ihelper
 {
 	private int speed;
 	private Rigidbody2D body;
+	private RaycastHit2D hit;
 	
 	
 		public void setSpeed(int input)
@@ -18,6 +19,8 @@ public class RunToward : Helper, Ihelper
 	{
 		body = input;
 	}
+	
+
 	
     public override void handle(string request)
 	{
@@ -66,7 +69,13 @@ public class RunToward : Helper, Ihelper
 	
 	private void getMoving(string input)
 	{
+		LayerMask mask = LayerMask.GetMask("Ground");
 		Vector2 bae = GameObject.FindWithTag("Player").transform.position;
+		hit = Physics2D.Raycast(body.position, new Vector2(0, -1), 1, mask);
+		if(hit.collider == null)
+		{
+			body.velocity = new Vector2(0, -20);
+		}
 		if(tooClose())
 		{
 			//do nothing...

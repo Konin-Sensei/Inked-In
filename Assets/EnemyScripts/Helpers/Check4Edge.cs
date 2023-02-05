@@ -9,7 +9,10 @@ public class Check4Edge: Helper, Ihelper
 		private RaycastHit2D hit;
 
 	
-	
+	public Check4Edge(string input)
+	{
+		job = input;
+	}
 	
 	public void set_raycast_length(float length_in)
 	{
@@ -26,7 +29,7 @@ public class Check4Edge: Helper, Ihelper
 	{
 		
 
-		if(request.Contains("Right") || request.Contains("Left"))//contains the word Right or Left
+		if(request.Contains("Right") || request.Contains("Left") || request.Contains(job))//contains the word Right or Left
 		{
 			checkEdges(request);
 		}

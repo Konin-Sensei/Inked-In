@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class walk : Helper, Ihelper
 {
+
+	private RaycastHit2D hitDown;
 	private RaycastHit2D hit;
 	private int speed;
 	private Rigidbody2D body;
@@ -34,7 +36,6 @@ public class walk : Helper, Ihelper
 	
 	public override void handle(string request)
 	{
-		Debug.Log(request);
 		if(request.Contains(job))
 		{
 			getMoving();
@@ -83,8 +84,18 @@ public class walk : Helper, Ihelper
 		
 	}
 	
+
+	
 	private void getMoving()
 	{
+		LayerMask mask = LayerMask.GetMask("Ground");
+		hitDown = Physics2D.Raycast(body.position, new Vector2(0, -1), 1, mask);
+		if(hitDown.collider == null)
+		{
+			body.velocity = new Vector2(0, -20);
+		}
+		else
+		{
 		checkEdges();
 		if(movingRight)
 		{
@@ -93,6 +104,7 @@ public class walk : Helper, Ihelper
 		else
 		{
 		goLeft();
+		}
 		}
 	}
 	
